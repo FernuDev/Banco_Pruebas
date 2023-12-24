@@ -1,0 +1,14 @@
+# ninja log v5
+0	22	1703381937301578105	Banco_Pruebas_autogen/timestamp	d3c32674e52c9798
+0	22	1703381937301578105	Banco_Pruebas_autogen/mocs_compilation.cpp	d3c32674e52c9798
+0	22	1703381937301578105	/home/fernu/Projects/Banco_Pruebas/cmake-build-debug/Banco_Pruebas_autogen/timestamp	d3c32674e52c9798
+0	22	1703381937301578105	/home/fernu/Projects/Banco_Pruebas/cmake-build-debug/Banco_Pruebas_autogen/mocs_compilation.cpp	d3c32674e52c9798
+22	36	1703381937321577728	CMakeFiles/Banco_Pruebas.dir/Banco_Pruebas_autogen/mocs_compilation.cpp.o	b9f19bfb3ad86ca8
+22	1677	1703381938958213558	CMakeFiles/Banco_Pruebas.dir/main.cpp.o	c4fba3aca213a881
+1678	1994	1703381939274874265	Banco_Pruebas	6ea12df39dfbf710
+2	16	1703381970057635481	Banco_Pruebas_autogen/timestamp	d3c32674e52c9798
+2	16	1703381970057635481	Banco_Pruebas_autogen/mocs_compilation.cpp	d3c32674e52c9798
+2	16	1703381970057635481	/home/fernu/Projects/Banco_Pruebas/cmake-build-debug/Banco_Pruebas_autogen/timestamp	d3c32674e52c9798
+2	16	1703381970057635481	/home/fernu/Projects/Banco_Pruebas/cmake-build-debug/Banco_Pruebas_autogen/mocs_compilation.cpp	d3c32674e52c9798
+17	1728	1703381971767604119	CMakeFiles/Banco_Pruebas.dir/main.cpp.o	c4fba3aca213a881
+1728	2076	1703381972110931161	Banco_Pruebas	6ea12df39dfbf710
