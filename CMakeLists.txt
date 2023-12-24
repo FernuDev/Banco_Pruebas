@@ -15,7 +15,11 @@ find_package(Qt6 COMPONENTS Core Gui Widgets Charts REQUIRED)
 find_package(Matplot++ REQUIRED)
 
 add_executable(Banco_Pruebas
-    main.cpp
+    ./src/main.cpp
+        src/Tools/serialReader.cpp
+        src/Tools/serialReader.h
+        src/Ui/Windows/MainWindow.cpp
+        src/Ui/Windows/MainWindow.h
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 
