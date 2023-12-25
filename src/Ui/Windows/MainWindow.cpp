@@ -41,7 +41,32 @@ void MainWindow::setStyle(){
     contentTitle->setTextFormat(Qt::TextFormat::MarkdownText);
     contentTitle->setAlignment(Qt::AlignCenter);
 
+    // Example of QtChart
 
+    auto *series = new QLineSeries(contentWidget);
+    series->append(0,6);
+    series->append(2,4);
+    series->append(3,8);
+    series->append(7,4);
+
+    // Pen for modify the line width and color
+    auto *pen = new QPen();
+
+
+    auto *chart = new QChart();
+    chart->addSeries(series);
+    chart->setTitle("Ejemplo de line chart");
+    chart->createDefaultAxes();
+
+    auto *chartView = new QChartView(chart, contentWidget);
+    chartView->setRenderHint(QPainter::Antialiasing);
+    chartView->setGeometry(75, 240, 780, 420);
+
+
+    // Buttons
+
+    auto *exitBtn = new QPushButton(sideBar);
+    exitBtn->setText("X");
 }
 
 

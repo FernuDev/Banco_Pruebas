@@ -12,6 +12,11 @@
 #include <QString>
 #include <QWidget>
 #include <QLabel>
+#include <QChart>
+#include <QLineSeries>
+#include <QChartView>
+#include <QPen>
+#include <QPushButton>
 
 class MainWindow : public QMainWindow {
 private:

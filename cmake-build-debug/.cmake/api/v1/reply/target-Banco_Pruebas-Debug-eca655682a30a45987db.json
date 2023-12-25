@@ -25,14 +25,14 @@
 			"CMakeLists.txt",
 			"/usr/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessTargets.cmake",
 			"/usr/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake",
-			"/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+			"/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
 			"/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
 			"/usr/lib/cmake/Qt6Charts/Qt6ChartsDependencies.cmake",
 			"/usr/lib/cmake/Qt6Charts/Qt6ChartsConfig.cmake",
 			"/usr/lib/cmake/Qt6/Qt6Config.cmake",
 			"/usr/lib/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake",
 			"/usr/lib/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake",
-			"/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindOpenGL.cmake",
+			"/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindOpenGL.cmake",
 			"/usr/lib/cmake/Qt6/FindWrapOpenGL.cmake",
 			"/usr/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
 			"/usr/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
@@ -45,13 +45,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 25,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
@@ -237,14 +237,6 @@
 			[
 				{
 					"backtrace" : 2,
-					"define" : "MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "NOMINMAX"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "QT_CHARTS_LIB"
 				},
 				{
@@ -337,9 +329,6 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "Banco_Pruebas_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "Banco_Pruebas_autogen::@6890427a1f51a3e7e1df"
 		}
@@ -360,11 +349,6 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "/usr/lib/libQt6Charts.so.6.6.1",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/usr/lib/libmatplot.so",
 				"role" : "libraries"
 			},
 			{
@@ -431,20 +415,6 @@
 				3,
 				5
 			]
-		},
-		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
-				6
-			]
-		},
-		{
-			"name" : "CMake Rules",
-			"sourceIndexes" : 
-			[
-				7
-			]
 		}
 	],
 	"sources" : 
@@ -483,18 +453,6 @@
 			"backtrace" : 1,
 			"path" : "src/Ui/Windows/MainWindow.h",
 			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/Banco_Pruebas_autogen/timestamp",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "cmake-build-debug/Banco_Pruebas_autogen/timestamp.rule",
-			"sourceGroupIndex" : 3
 		}
 	],
 	"type" : "EXECUTABLE"
