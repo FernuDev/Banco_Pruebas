@@ -14,7 +14,6 @@ void MainWindow::Resize(float w, float h) {
 void MainWindow::setStyle(){
 
     //border: 2px solid red
-
     this->setStyleSheet("background-color: #28282C; color: white");
     auto *centralWidget = new QWidget(this);
     centralWidget->resize(this->width, this->height);

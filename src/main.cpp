@@ -1,6 +1,5 @@
 #include <iostream>
 #include <QApplication>
-#include <QMainWindow>
 
 #include "./Ui/Windows/MainWindow.h"
 

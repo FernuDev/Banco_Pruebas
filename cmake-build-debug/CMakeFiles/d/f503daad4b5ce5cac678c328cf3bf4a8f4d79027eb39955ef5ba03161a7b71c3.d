@@ -34,8 +34,8 @@ Banco_Pruebas_autogen/timestamp: \
   /home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake \
   /home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake \
   /home/fernu/Projects/Banco_Pruebas/CMakeLists.txt \
-  CMakeFiles/3.27.0/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.27.0/CMakeSystem.cmake \
+  CMakeFiles/3.27.8/CMakeCXXCompiler.cmake \
+  CMakeFiles/3.27.8/CMakeSystem.cmake \
   /home/fernu/Projects/Banco_Pruebas/src/Tools/serialReader.cpp \
   /home/fernu/Projects/Banco_Pruebas/src/Tools/serialReader.h \
   /home/fernu/Projects/Banco_Pruebas/src/Ui/Windows/MainWindow.cpp \
