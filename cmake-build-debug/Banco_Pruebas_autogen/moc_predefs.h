@@ -12,7 +12,6 @@
 #define __BFLT16_DENORM_MIN__ 9.18354961579912115600575419704879436e-41BF16
 #define __INTMAX_C(c) c ## L
 #define __CHAR_BIT__ 8
-#define MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP 1
 #define __UINT8_MAX__ 0xff
 #define __SCHAR_WIDTH__ 8
 #define __WINT_MAX__ 0xffffffffU
@@ -269,7 +268,6 @@
 #define __USER_LABEL_PREFIX__ 
 #define __STDC_IEC_60559_BFP__ 201404L
 #define __SIZEOF_PTRDIFF_T__ 8
-#define NOMINMAX 1
 #define __FLT64X_HAS_INFINITY__ 1
 #define __SIZEOF_LONG__ 8
 #define __LDBL_DIG__ 18

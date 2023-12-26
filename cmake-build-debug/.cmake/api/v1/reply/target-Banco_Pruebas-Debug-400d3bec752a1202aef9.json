@@ -45,13 +45,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 25,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
@@ -237,14 +237,6 @@
 			[
 				{
 					"backtrace" : 2,
-					"define" : "MATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "NOMINMAX"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "QT_CHARTS_LIB"
 				},
 				{
@@ -360,11 +352,6 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "/usr/lib/libQt6Charts.so.6.6.1",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/usr/lib/libmatplot.so",
 				"role" : "libraries"
 			},
 			{

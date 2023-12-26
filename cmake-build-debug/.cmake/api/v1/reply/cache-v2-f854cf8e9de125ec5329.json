@@ -190,7 +190,7 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "/usr/bin/c++"
 		},
 		{
@@ -1460,18 +1460,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "1"
-		},
-		{
-			"name" : "Matplot++_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Matplot++."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/lib/cmake/Matplot++"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",
