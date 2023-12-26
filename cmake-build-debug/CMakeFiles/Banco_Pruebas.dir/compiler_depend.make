@@ -288,6 +288,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: /home/fernu/Projec
   /usr/include/qt6/QtCharts/QChartView \
   /usr/include/qt6/QtCharts/QLegend \
   /usr/include/qt6/QtCharts/QLineSeries \
+  /usr/include/qt6/QtCharts/QValueAxis \
   /usr/include/qt6/QtCharts/QXYSeries \
   /usr/include/qt6/QtCharts/qabstractaxis.h \
   /usr/include/qt6/QtCharts/qabstractseries.h \
@@ -298,6 +299,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: /home/fernu/Projec
   /usr/include/qt6/QtCharts/qlineseries.h \
   /usr/include/qt6/QtCharts/qtcharts-config.h \
   /usr/include/qt6/QtCharts/qtchartsexports.h \
+  /usr/include/qt6/QtCharts/qvalueaxis.h \
   /usr/include/qt6/QtCharts/qxyseries.h \
   /usr/include/qt6/QtCore/QCoreApplication \
   /usr/include/qt6/QtCore/QList \
@@ -799,6 +801,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
   /usr/include/qt6/QtCharts/QChartView \
   /usr/include/qt6/QtCharts/QLegend \
   /usr/include/qt6/QtCharts/QLineSeries \
+  /usr/include/qt6/QtCharts/QValueAxis \
   /usr/include/qt6/QtCharts/QXYSeries \
   /usr/include/qt6/QtCharts/qabstractaxis.h \
   /usr/include/qt6/QtCharts/qabstractseries.h \
@@ -809,6 +812,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
   /usr/include/qt6/QtCharts/qlineseries.h \
   /usr/include/qt6/QtCharts/qtcharts-config.h \
   /usr/include/qt6/QtCharts/qtchartsexports.h \
+  /usr/include/qt6/QtCharts/qvalueaxis.h \
   /usr/include/qt6/QtCharts/qxyseries.h \
   /usr/include/qt6/QtCore/QCoreApplication \
   /usr/include/qt6/QtCore/QList \
@@ -1263,6 +1267,8 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 
 /usr/include/qt6/QtCore/qcoreevent.h:
 
+/usr/include/qt6/QtCore/qcoreapplication_platform.h:
+
 /usr/include/qt6/QtGui/qinputmethod.h:
 
 /usr/include/c++/13.2.1/bits/stl_pair.h:
@@ -1448,10 +1454,6 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 /usr/include/qt6/QtCore/qnumeric.h:
 
 /usr/include/c++/13.2.1/tr1/bessel_function.tcc:
-
-/usr/include/qt6/QtWidgets/QMainWindow:
-
-/usr/include/c++/13.2.1/algorithm:
 
 /usr/include/c++/13.2.1/bits/ostream.tcc:
 
@@ -1653,6 +1655,8 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 
 /usr/include/bits/stdint-uintn.h:
 
+/usr/include/qt6/QtCharts/QValueAxis:
+
 /usr/include/c++/13.2.1/bits/memoryfwd.h:
 
 /usr/include/c++/13.2.1/pstl/glue_memory_defs.h:
@@ -1762,8 +1766,6 @@ Banco_Pruebas_autogen/mocs_compilation.cpp:
 /usr/include/qt6/QtGui/qpicture.h:
 
 /usr/include/c++/13.2.1/chrono:
-
-/usr/include/qt6/QtCore/qcoreapplication_platform.h:
 
 /usr/include/qt6/QtCore/qmap.h:
 
@@ -2018,6 +2020,12 @@ Banco_Pruebas_autogen/mocs_compilation.cpp:
 /usr/include/qt6/QtCharts/QAbstractAxis:
 
 /usr/include/qt6/QtCharts/qtcharts-config.h:
+
+/usr/include/qt6/QtWidgets/QMainWindow:
+
+/usr/include/c++/13.2.1/algorithm:
+
+/usr/include/qt6/QtCharts/qvalueaxis.h:
 
 /usr/include/qt6/QtCore/QList:
 

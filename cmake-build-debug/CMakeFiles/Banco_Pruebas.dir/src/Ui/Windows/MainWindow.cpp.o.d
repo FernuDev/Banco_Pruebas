@@ -390,4 +390,6 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: \
  /usr/include/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/qt6/QtCore/qcoreapplication.h \
  /usr/include/qt6/QtCore/QTimer /usr/include/qt6/QtCore/qtimer.h \
- /usr/include/qt6/QtCore/qbasictimer.h
+ /usr/include/qt6/QtCore/qbasictimer.h \
+ /usr/include/qt6/QtCharts/QValueAxis \
+ /usr/include/qt6/QtCharts/qvalueaxis.h

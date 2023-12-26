@@ -291,6 +291,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o
  /usr/include/qt6/QtCharts/QChartView
  /usr/include/qt6/QtCharts/QLegend
  /usr/include/qt6/QtCharts/QLineSeries
+ /usr/include/qt6/QtCharts/QValueAxis
  /usr/include/qt6/QtCharts/QXYSeries
  /usr/include/qt6/QtCharts/qabstractaxis.h
  /usr/include/qt6/QtCharts/qabstractseries.h
@@ -301,6 +302,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o
  /usr/include/qt6/QtCharts/qlineseries.h
  /usr/include/qt6/QtCharts/qtcharts-config.h
  /usr/include/qt6/QtCharts/qtchartsexports.h
+ /usr/include/qt6/QtCharts/qvalueaxis.h
  /usr/include/qt6/QtCharts/qxyseries.h
  /usr/include/qt6/QtCore/QCoreApplication
  /usr/include/qt6/QtCore/QList
@@ -803,6 +805,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o
  /usr/include/qt6/QtCharts/QChartView
  /usr/include/qt6/QtCharts/QLegend
  /usr/include/qt6/QtCharts/QLineSeries
+ /usr/include/qt6/QtCharts/QValueAxis
  /usr/include/qt6/QtCharts/QXYSeries
  /usr/include/qt6/QtCharts/qabstractaxis.h
  /usr/include/qt6/QtCharts/qabstractseries.h
@@ -813,6 +816,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o
  /usr/include/qt6/QtCharts/qlineseries.h
  /usr/include/qt6/QtCharts/qtcharts-config.h
  /usr/include/qt6/QtCharts/qtchartsexports.h
+ /usr/include/qt6/QtCharts/qvalueaxis.h
  /usr/include/qt6/QtCharts/qxyseries.h
  /usr/include/qt6/QtCore/QCoreApplication
  /usr/include/qt6/QtCore/QList

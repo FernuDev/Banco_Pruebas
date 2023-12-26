@@ -44,24 +44,47 @@ void MainWindow::setStyle(){
     // Example of QtChart
 
     auto *series = new QLineSeries(contentWidget);
-    series->append(0,6);
-    series->append(2,4);
-    series->append(3,8);
-    series->append(7,4);
+
+    series->setUseOpenGL(true);
 
     // Pen for modify the line width and color
     auto *pen = new QPen();
+    pen->setWidth(4);
+    pen->setColor("#257e95");
+    series->setPen(*pen);
 
+    // Custom axes
+    auto *axisX = new QValueAxis;
+    auto *axisY = new QValueAxis;
+
+    // Establishment limits for axis
+    axisX->setRange(-10, 110);
+    axisX->setTitleText("Tiempo [ds]");
+    axisY->setRange(-5, 5);
+    axisY->setTitleText("Empuje [N]");
+
+    axisX->setTitleBrush(QBrush(Qt::white));
+    axisY->setTitleBrush(QBrush(Qt::white));
+    axisX->setLabelsBrush(QBrush(Qt::white));
+    axisY->setLabelsBrush(QBrush(Qt::white));
+    axisX->setGridLineVisible(false);
+    axisY->setGridLineVisible(false);
 
     auto *chart = new QChart();
     chart->addSeries(series);
-    chart->setTitle("Ejemplo de line chart");
-    chart->createDefaultAxes();
+    chart->setTitle("Empuje-Tiempo");
+    chart->addAxis(axisX, Qt::AlignBottom);
+    chart->addAxis(axisY, Qt::AlignLeft);
+    chart->setBackgroundBrush(QBrush(QColor(0,0,0,0)));
+    chart->setTitleBrush(QBrush(Qt::white));
 
+    series->attachAxis(axisX);
+    series->attachAxis(axisY);
+    
     auto *chartView = new QChartView(chart, contentWidget);
     chartView->setRenderHint(QPainter::Antialiasing);
-    chartView->setGeometry(75, 240, 780, 420);
-
+    chartView->setGeometry(75, 240, 880, 520);
+    chartView->setStyleSheet("color: white");
 
     // Buttons
 
@@ -69,37 +92,36 @@ void MainWindow::setStyle(){
     auto *exitBtn = new QPushButton(sideBar);
     exitBtn->setText("X");
     exitBtn->setGeometry(90, 900, 100, 30);
-    // Conection to the actions in the button
 
+    // Connection to the actions in the button
     connect(exitBtn, &QPushButton::clicked, this, &MainWindow::closeWindow);
 
 
     // Timer
 
-    auto *time = new QLabel(contentWidget);
-    time->setTextFormat(Qt::MarkdownText);
-    time->setText("# 0");
-    time->setGeometry(950, 20, 100, 50);
-    time->setAlignment(Qt::AlignCenter);
+    auto *timeTitle = new QLabel(contentWidget);
+    timeTitle->setTextFormat(Qt::MarkdownText);
+    timeTitle->setText("# 0");
+    timeTitle->setGeometry(950, 20, 100, 50);
+    timeTitle->setAlignment(Qt::AlignCenter);
 
-    auto *timer = new QTimer(contentWidget);
-
-    connect(timer, &QTimer::timeout, contentWidget, [=]() {
-        this->time += 1;
-        this->setTime(*contentWidget, *time);
-        auto *auxTime = new std::string(std::to_string(this->time));
-        time->setText("# "+QString::fromStdString(*auxTime));
-
-        delete auxTime;
-    });
-    timer->setInterval(1000);
-    timer->start();
+   this->setTime(*contentWidget, *timeTitle, *series, *axisX, *axisY);
 }
 
-// Funcionalities
+// Functionalities
 
-void MainWindow::setTime(QWidget &parent, QLabel &title) {
-    std::cout<<this->time;
+void MainWindow::setTime(QWidget &parent, QLabel &timeTitle, QLineSeries &series, QValueAxis &axisX, QValueAxis &axisY) {
+    auto *timer = new QTimer(&parent);
+
+    connect(timer, &QTimer::timeout, &parent, [=, &timeTitle, &series, &axisX, &axisY]() mutable {
+       this->time += 1;
+       axisX.setRange(0, this->time + 10);
+       series.append(this->time, qSin(this->time / 10.0));
+       timeTitle.setText("# "+QString::number(this->time));
+    });
+
+    timer->setInterval(10);
+    timer->start();
 }
 
 // Getters and Setters

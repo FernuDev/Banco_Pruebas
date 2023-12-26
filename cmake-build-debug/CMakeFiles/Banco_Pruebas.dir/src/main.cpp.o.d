@@ -335,6 +335,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
  /usr/include/qt6/QtCore/qvariant.h \
  /usr/include/qt6/QtGui/qguiapplication_platform.h \
+ /home/fernu/Projects/Banco_Pruebas/src/./Ui/Windows/MainWindow.h \
  /usr/include/qt6/QtWidgets/QMainWindow \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
  /usr/include/qt6/QtWidgets/qwidget.h /usr/include/qt6/QtGui/qaction.h \
@@ -343,13 +344,11 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtGui/qfontmetrics.h \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/qt6/QtWidgets/qtabwidget.h \
- /home/fernu/Projects/Banco_Pruebas/src/./Ui/Windows/MainWindow.h \
- /usr/include/qt6/QtCore/QString /usr/include/qt6/QtCore/qstring.h \
- /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
- /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
- /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qpicture.h \
- /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtWidgets/qtabwidget.h /usr/include/qt6/QtCore/QString \
+ /usr/include/qt6/QtCore/qstring.h /usr/include/qt6/QtWidgets/QWidget \
+ /usr/include/qt6/QtWidgets/qwidget.h /usr/include/qt6/QtWidgets/QLabel \
+ /usr/include/qt6/QtWidgets/qlabel.h /usr/include/qt6/QtWidgets/qframe.h \
+ /usr/include/qt6/QtGui/qpicture.h /usr/include/qt6/QtCore/qiodevice.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
  /usr/include/qt6/QtCharts/QChart /usr/include/qt6/QtCharts/qchart.h \
  /usr/include/qt6/QtCharts/QAbstractSeries \
@@ -399,4 +398,6 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/QCoreApplication \
  /usr/include/qt6/QtCore/qcoreapplication.h \
  /usr/include/qt6/QtCore/QTimer /usr/include/qt6/QtCore/qtimer.h \
- /usr/include/qt6/QtCore/qbasictimer.h
+ /usr/include/qt6/QtCore/qbasictimer.h \
+ /usr/include/qt6/QtCharts/QValueAxis \
+ /usr/include/qt6/QtCharts/qvalueaxis.h

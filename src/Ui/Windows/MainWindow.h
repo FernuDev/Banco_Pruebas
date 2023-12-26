@@ -19,6 +19,7 @@
 #include <QPushButton>
 #include <QCoreApplication>
 #include <QTimer>
+#include <QValueAxis>
 
 class MainWindow : public QMainWindow {
 private:
@@ -32,9 +33,6 @@ public:
         this->setMaximumSize(this->width, this->height);
         this->setWindowTitle(QString::fromStdString(this->title));
 
-        std::cout<<"El ancho es: "<<this->width<<std::endl;
-        std::cout<<"El alto es: "<<this->height<<std::endl;
-
         this->time = 0;
 
         this->setStyle();
@@ -46,7 +44,7 @@ public:
 
     void Resize(float w, float h);
     void setStyle();
-    void setTime(QWidget& parent, QLabel& title);
+void setTime(QWidget& parent, QLabel& title, QLineSeries& series, QValueAxis& axisX, QValueAxis& axisY);
     // Getters and Setters
 
     std::string getTitle();
