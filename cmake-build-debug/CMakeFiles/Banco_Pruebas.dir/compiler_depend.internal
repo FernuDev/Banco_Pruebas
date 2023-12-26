@@ -302,6 +302,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o
  /usr/include/qt6/QtCharts/qtcharts-config.h
  /usr/include/qt6/QtCharts/qtchartsexports.h
  /usr/include/qt6/QtCharts/qxyseries.h
+ /usr/include/qt6/QtCore/QCoreApplication
  /usr/include/qt6/QtCore/QList
  /usr/include/qt6/QtCore/QMargins
  /usr/include/qt6/QtCore/QObject
@@ -309,6 +310,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o
  /usr/include/qt6/QtCore/QSize
  /usr/include/qt6/QtCore/QSizeF
  /usr/include/qt6/QtCore/QString
+ /usr/include/qt6/QtCore/QTimer
  /usr/include/qt6/QtCore/QVariant
  /usr/include/qt6/QtCore/q20functional.h
  /usr/include/qt6/QtCore/q20memory.h
@@ -323,6 +325,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o
  /usr/include/qt6/QtCore/qatomic.h
  /usr/include/qt6/QtCore/qatomic_cxx11.h
  /usr/include/qt6/QtCore/qbasicatomic.h
+ /usr/include/qt6/QtCore/qbasictimer.h
  /usr/include/qt6/QtCore/qbindingstorage.h
  /usr/include/qt6/QtCore/qbytearray.h
  /usr/include/qt6/QtCore/qbytearrayalgorithms.h
@@ -338,10 +341,13 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o
  /usr/include/qt6/QtCore/qcontainerinfo.h
  /usr/include/qt6/QtCore/qcontainertools_impl.h
  /usr/include/qt6/QtCore/qcontiguouscache.h
+ /usr/include/qt6/QtCore/qcoreapplication.h
+ /usr/include/qt6/QtCore/qcoreapplication_platform.h
  /usr/include/qt6/QtCore/qcoreevent.h
  /usr/include/qt6/QtCore/qdarwinhelpers.h
  /usr/include/qt6/QtCore/qdatastream.h
  /usr/include/qt6/QtCore/qdebug.h
+ /usr/include/qt6/QtCore/qeventloop.h
  /usr/include/qt6/QtCore/qexceptionhandling.h
  /usr/include/qt6/QtCore/qflags.h
  /usr/include/qt6/QtCore/qfloat16.h
@@ -412,6 +418,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o
  /usr/include/qt6/QtCore/qtdeprecationmarkers.h
  /usr/include/qt6/QtCore/qtenvironmentvariables.h
  /usr/include/qt6/QtCore/qtextstream.h
+ /usr/include/qt6/QtCore/qtimer.h
  /usr/include/qt6/QtCore/qtmetamacros.h
  /usr/include/qt6/QtCore/qtnoop.h
  /usr/include/qt6/QtCore/qtpreprocessorsupport.h
@@ -474,7 +481,9 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o
  /usr/include/qt6/QtWidgets/QGraphicsWidget
  /usr/include/qt6/QtWidgets/QLabel
  /usr/include/qt6/QtWidgets/QMainWindow
+ /usr/include/qt6/QtWidgets/QPushButton
  /usr/include/qt6/QtWidgets/QWidget
+ /usr/include/qt6/QtWidgets/qabstractbutton.h
  /usr/include/qt6/QtWidgets/qabstractscrollarea.h
  /usr/include/qt6/QtWidgets/qframe.h
  /usr/include/qt6/QtWidgets/qgraphicsitem.h
@@ -484,6 +493,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o
  /usr/include/qt6/QtWidgets/qgraphicswidget.h
  /usr/include/qt6/QtWidgets/qlabel.h
  /usr/include/qt6/QtWidgets/qmainwindow.h
+ /usr/include/qt6/QtWidgets/qpushbutton.h
  /usr/include/qt6/QtWidgets/qscrollarea.h
  /usr/include/qt6/QtWidgets/qsizepolicy.h
  /usr/include/qt6/QtWidgets/qtabwidget.h
@@ -804,6 +814,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o
  /usr/include/qt6/QtCharts/qtcharts-config.h
  /usr/include/qt6/QtCharts/qtchartsexports.h
  /usr/include/qt6/QtCharts/qxyseries.h
+ /usr/include/qt6/QtCore/QCoreApplication
  /usr/include/qt6/QtCore/QList
  /usr/include/qt6/QtCore/QMargins
  /usr/include/qt6/QtCore/QObject
@@ -811,6 +822,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o
  /usr/include/qt6/QtCore/QSize
  /usr/include/qt6/QtCore/QSizeF
  /usr/include/qt6/QtCore/QString
+ /usr/include/qt6/QtCore/QTimer
  /usr/include/qt6/QtCore/QVariant
  /usr/include/qt6/QtCore/q20functional.h
  /usr/include/qt6/QtCore/q20memory.h
@@ -825,6 +837,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o
  /usr/include/qt6/QtCore/qatomic.h
  /usr/include/qt6/QtCore/qatomic_cxx11.h
  /usr/include/qt6/QtCore/qbasicatomic.h
+ /usr/include/qt6/QtCore/qbasictimer.h
  /usr/include/qt6/QtCore/qbindingstorage.h
  /usr/include/qt6/QtCore/qbytearray.h
  /usr/include/qt6/QtCore/qbytearrayalgorithms.h
@@ -918,6 +931,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o
  /usr/include/qt6/QtCore/qtdeprecationmarkers.h
  /usr/include/qt6/QtCore/qtenvironmentvariables.h
  /usr/include/qt6/QtCore/qtextstream.h
+ /usr/include/qt6/QtCore/qtimer.h
  /usr/include/qt6/QtCore/qtmetamacros.h
  /usr/include/qt6/QtCore/qtnoop.h
  /usr/include/qt6/QtCore/qtpreprocessorsupport.h
@@ -984,7 +998,9 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o
  /usr/include/qt6/QtWidgets/QGraphicsWidget
  /usr/include/qt6/QtWidgets/QLabel
  /usr/include/qt6/QtWidgets/QMainWindow
+ /usr/include/qt6/QtWidgets/QPushButton
  /usr/include/qt6/QtWidgets/QWidget
+ /usr/include/qt6/QtWidgets/qabstractbutton.h
  /usr/include/qt6/QtWidgets/qabstractscrollarea.h
  /usr/include/qt6/QtWidgets/qapplication.h
  /usr/include/qt6/QtWidgets/qframe.h
@@ -995,6 +1011,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o
  /usr/include/qt6/QtWidgets/qgraphicswidget.h
  /usr/include/qt6/QtWidgets/qlabel.h
  /usr/include/qt6/QtWidgets/qmainwindow.h
+ /usr/include/qt6/QtWidgets/qpushbutton.h
  /usr/include/qt6/QtWidgets/qscrollarea.h
  /usr/include/qt6/QtWidgets/qsizepolicy.h
  /usr/include/qt6/QtWidgets/qtabwidget.h

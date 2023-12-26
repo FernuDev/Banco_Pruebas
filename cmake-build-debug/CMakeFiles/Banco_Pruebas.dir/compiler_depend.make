@@ -299,6 +299,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: /home/fernu/Projec
   /usr/include/qt6/QtCharts/qtcharts-config.h \
   /usr/include/qt6/QtCharts/qtchartsexports.h \
   /usr/include/qt6/QtCharts/qxyseries.h \
+  /usr/include/qt6/QtCore/QCoreApplication \
   /usr/include/qt6/QtCore/QList \
   /usr/include/qt6/QtCore/QMargins \
   /usr/include/qt6/QtCore/QObject \
@@ -306,6 +307,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: /home/fernu/Projec
   /usr/include/qt6/QtCore/QSize \
   /usr/include/qt6/QtCore/QSizeF \
   /usr/include/qt6/QtCore/QString \
+  /usr/include/qt6/QtCore/QTimer \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20memory.h \
@@ -320,6 +322,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: /home/fernu/Projec
   /usr/include/qt6/QtCore/qatomic.h \
   /usr/include/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/qt6/QtCore/qbasicatomic.h \
+  /usr/include/qt6/QtCore/qbasictimer.h \
   /usr/include/qt6/QtCore/qbindingstorage.h \
   /usr/include/qt6/QtCore/qbytearray.h \
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
@@ -335,10 +338,13 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: /home/fernu/Projec
   /usr/include/qt6/QtCore/qcontainerinfo.h \
   /usr/include/qt6/QtCore/qcontainertools_impl.h \
   /usr/include/qt6/QtCore/qcontiguouscache.h \
+  /usr/include/qt6/QtCore/qcoreapplication.h \
+  /usr/include/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/qt6/QtCore/qcoreevent.h \
   /usr/include/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/qt6/QtCore/qdatastream.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
   /usr/include/qt6/QtCore/qflags.h \
   /usr/include/qt6/QtCore/qfloat16.h \
@@ -409,6 +415,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: /home/fernu/Projec
   /usr/include/qt6/QtCore/qtdeprecationmarkers.h \
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
+  /usr/include/qt6/QtCore/qtimer.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
@@ -471,7 +478,9 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: /home/fernu/Projec
   /usr/include/qt6/QtWidgets/QGraphicsWidget \
   /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/QMainWindow \
+  /usr/include/qt6/QtWidgets/QPushButton \
   /usr/include/qt6/QtWidgets/QWidget \
+  /usr/include/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/qt6/QtWidgets/qframe.h \
   /usr/include/qt6/QtWidgets/qgraphicsitem.h \
@@ -481,6 +490,7 @@ CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o: /home/fernu/Projec
   /usr/include/qt6/QtWidgets/qgraphicswidget.h \
   /usr/include/qt6/QtWidgets/qlabel.h \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/qt6/QtWidgets/qpushbutton.h \
   /usr/include/qt6/QtWidgets/qscrollarea.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtWidgets/qtabwidget.h \
@@ -800,6 +810,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
   /usr/include/qt6/QtCharts/qtcharts-config.h \
   /usr/include/qt6/QtCharts/qtchartsexports.h \
   /usr/include/qt6/QtCharts/qxyseries.h \
+  /usr/include/qt6/QtCore/QCoreApplication \
   /usr/include/qt6/QtCore/QList \
   /usr/include/qt6/QtCore/QMargins \
   /usr/include/qt6/QtCore/QObject \
@@ -807,6 +818,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
   /usr/include/qt6/QtCore/QSize \
   /usr/include/qt6/QtCore/QSizeF \
   /usr/include/qt6/QtCore/QString \
+  /usr/include/qt6/QtCore/QTimer \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20memory.h \
@@ -821,6 +833,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
   /usr/include/qt6/QtCore/qatomic.h \
   /usr/include/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/qt6/QtCore/qbasicatomic.h \
+  /usr/include/qt6/QtCore/qbasictimer.h \
   /usr/include/qt6/QtCore/qbindingstorage.h \
   /usr/include/qt6/QtCore/qbytearray.h \
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
@@ -914,6 +927,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
   /usr/include/qt6/QtCore/qtdeprecationmarkers.h \
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
+  /usr/include/qt6/QtCore/qtimer.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
@@ -980,7 +994,9 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
   /usr/include/qt6/QtWidgets/QGraphicsWidget \
   /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/QMainWindow \
+  /usr/include/qt6/QtWidgets/QPushButton \
   /usr/include/qt6/QtWidgets/QWidget \
+  /usr/include/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/qt6/QtWidgets/qapplication.h \
   /usr/include/qt6/QtWidgets/qframe.h \
@@ -991,6 +1007,7 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
   /usr/include/qt6/QtWidgets/qgraphicswidget.h \
   /usr/include/qt6/QtWidgets/qlabel.h \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/qt6/QtWidgets/qpushbutton.h \
   /usr/include/qt6/QtWidgets/qscrollarea.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtWidgets/qtabwidget.h \
@@ -1026,8 +1043,6 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 
 /usr/include/qt6/QtGui/qguiapplication.h:
 
-/usr/include/qt6/QtCore/qcoreapplication_platform.h:
-
 /home/fernu/Projects/Banco_Pruebas/src/main.cpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h:
@@ -1060,9 +1075,13 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 
 /usr/include/qt6/QtWidgets/qscrollarea.h:
 
+/usr/include/qt6/QtWidgets/qpushbutton.h:
+
 /usr/include/qt6/QtWidgets/qgraphicsview.h:
 
 /usr/include/qt6/QtWidgets/qabstractscrollarea.h:
+
+/usr/include/qt6/QtWidgets/QPushButton:
 
 /usr/include/qt6/QtWidgets/QGraphicsWidget:
 
@@ -1152,6 +1171,8 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 
 /usr/include/qt6/QtCore/qtclasshelpermacros.h:
 
+/usr/include/qt6/QtWidgets/qabstractbutton.h:
+
 /usr/include/qt6/QtCore/qswap.h:
 
 /usr/include/qt6/QtCore/qstringtokenizer.h:
@@ -1228,6 +1249,20 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 
 /usr/include/qt6/QtCore/qflags.h:
 
+/usr/include/qt6/QtCore/qexceptionhandling.h:
+
+/usr/include/qt6/QtCore/qstringview.h:
+
+/usr/include/qt6/QtCore/qdebug.h:
+
+/usr/include/qt6/QtCore/qdatastream.h:
+
+/usr/include/qt6/QtCore/qdarwinhelpers.h:
+
+/usr/include/qt6/QtWidgets/qgraphicswidget.h:
+
+/usr/include/qt6/QtCore/qcoreevent.h:
+
 /usr/include/qt6/QtGui/qinputmethod.h:
 
 /usr/include/c++/13.2.1/bits/stl_pair.h:
@@ -1263,8 +1298,6 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 /usr/include/c++/13.2.1/bits/shared_ptr.h:
 
 /usr/include/qt6/QtCharts/QChartView:
-
-/usr/include/qt6/QtCore/qdarwinhelpers.h:
 
 /usr/include/c++/13.2.1/bits/requires_hosted.h:
 
@@ -1388,6 +1421,8 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 
 /usr/include/linux/errno.h:
 
+/usr/include/qt6/QtCore/qtimer.h:
+
 /usr/include/c++/13.2.1/bits/range_access.h:
 
 /usr/include/qt6/QtWidgets/QGraphicsView:
@@ -1508,8 +1543,6 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 
 /usr/include/bits/uintn-identity.h:
 
-/usr/include/qt6/QtCore/qdatastream.h:
-
 /usr/include/c++/13.2.1/backward/binders.h:
 
 /home/fernu/Projects/Banco_Pruebas/src/Tools/serialReader.h:
@@ -1526,6 +1559,8 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 
 /usr/include/bits/iscanonical.h:
 
+/usr/include/qt6/QtCore/QCoreApplication:
+
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/bits/endianness.h:
@@ -1539,10 +1574,6 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 /usr/include/qt6/QtCore/qnativeinterface.h:
 
 /usr/include/c++/13.2.1/numeric:
-
-/usr/include/qt6/QtWidgets/qgraphicswidget.h:
-
-/usr/include/qt6/QtCore/qcoreevent.h:
 
 /usr/include/c++/13.2.1/bits/stl_bvector.h:
 
@@ -1567,6 +1598,8 @@ CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o: /home/fernu/Projects/Banco_Pruebas/
 /usr/include/c++/13.2.1/initializer_list:
 
 /usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/qt6/QtCore/qbasictimer.h:
 
 /usr/include/c++/13.2.1/cstddef:
 
@@ -1730,6 +1763,8 @@ Banco_Pruebas_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13.2.1/chrono:
 
+/usr/include/qt6/QtCore/qcoreapplication_platform.h:
+
 /usr/include/qt6/QtCore/qmap.h:
 
 /usr/include/c++/13.2.1/bits/stringfwd.h:
@@ -1832,6 +1867,8 @@ Banco_Pruebas_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13.2.1/pstl/execution_defs.h:
 
+/usr/include/qt6/QtCore/QTimer:
+
 /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/13.2.1/pstl/glue_numeric_defs.h:
@@ -1863,10 +1900,6 @@ Banco_Pruebas_autogen/mocs_compilation.cpp:
 /usr/include/c++/13.2.1/string_view:
 
 /usr/include/qt6/QtCore/QSizeF:
-
-/usr/include/qt6/QtCore/qstringview.h:
-
-/usr/include/qt6/QtCore/qdebug.h:
 
 /usr/include/c++/13.2.1/system_error:
 
@@ -2043,5 +2076,3 @@ Banco_Pruebas_autogen/mocs_compilation.cpp:
 /usr/include/qt6/QtCore/qcontainertools_impl.h:
 
 /usr/include/qt6/QtCore/qcontiguouscache.h:
-
-/usr/include/qt6/QtCore/qexceptionhandling.h:

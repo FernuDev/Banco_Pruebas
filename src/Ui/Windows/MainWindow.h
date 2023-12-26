@@ -17,11 +17,14 @@
 #include <QChartView>
 #include <QPen>
 #include <QPushButton>
+#include <QCoreApplication>
+#include <QTimer>
 
 class MainWindow : public QMainWindow {
 private:
     int width, height;
     std::string title;
+    int time;
 public:
 
     MainWindow(int w, int h, std::string title) : width(w), height(h), title(std::move(title)) {
@@ -32,9 +35,9 @@ public:
         std::cout<<"El ancho es: "<<this->width<<std::endl;
         std::cout<<"El alto es: "<<this->height<<std::endl;
 
+        this->time = 0;
+
         this->setStyle();
-
-
     }
 
     ~MainWindow() override {
@@ -43,12 +46,14 @@ public:
 
     void Resize(float w, float h);
     void setStyle();
-
+    void setTime(QWidget& parent, QLabel& title);
     // Getters and Setters
 
     std::string getTitle();
     void setTitle(std::string title);
 
+public slots:
+    void closeWindow();
 };
 
 

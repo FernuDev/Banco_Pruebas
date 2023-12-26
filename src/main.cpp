@@ -13,5 +13,9 @@ int main(int argc, char **argv){
 
     mainWindow->show();
 
+    int counter(0);
+
+
+
     return QApplication::exec();
 }

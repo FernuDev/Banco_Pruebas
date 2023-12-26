@@ -65,10 +65,42 @@ void MainWindow::setStyle(){
 
     // Buttons
 
+    // Exit button
     auto *exitBtn = new QPushButton(sideBar);
     exitBtn->setText("X");
+    exitBtn->setGeometry(90, 900, 100, 30);
+    // Conection to the actions in the button
+
+    connect(exitBtn, &QPushButton::clicked, this, &MainWindow::closeWindow);
+
+
+    // Timer
+
+    auto *time = new QLabel(contentWidget);
+    time->setTextFormat(Qt::MarkdownText);
+    time->setText("# 0");
+    time->setGeometry(950, 20, 100, 50);
+    time->setAlignment(Qt::AlignCenter);
+
+    auto *timer = new QTimer(contentWidget);
+
+    connect(timer, &QTimer::timeout, contentWidget, [=]() {
+        this->time += 1;
+        this->setTime(*contentWidget, *time);
+        auto *auxTime = new std::string(std::to_string(this->time));
+        time->setText("# "+QString::fromStdString(*auxTime));
+
+        delete auxTime;
+    });
+    timer->setInterval(1000);
+    timer->start();
 }
 
+// Funcionalities
+
+void MainWindow::setTime(QWidget &parent, QLabel &title) {
+    std::cout<<this->time;
+}
 
 // Getters and Setters
 
@@ -80,6 +112,11 @@ void MainWindow::setTitle(std::string title) {
     this->title = std::move(title);
     this->setWindowTitle(QString::fromStdString(this->title));
 }
+
+void MainWindow::closeWindow() {
+    this->close();
+}
+
 
 
 
