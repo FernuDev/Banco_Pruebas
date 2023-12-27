@@ -19,6 +19,8 @@ add_executable(Banco_Pruebas
         src/Tools/serialReader.h
         src/Ui/Windows/MainWindow.cpp
         src/Ui/Windows/MainWindow.h
+        src/Ui/Components/LinearChart.cpp
+        src/Ui/Components/LinearChart.h
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 
