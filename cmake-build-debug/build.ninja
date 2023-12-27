@@ -89,6 +89,14 @@ build CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.o: CXX_COMP
   OBJECT_DIR = CMakeFiles/Banco_Pruebas.dir
   OBJECT_FILE_DIR = CMakeFiles/Banco_Pruebas.dir/src/Ui/Components
 
+build CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.o: CXX_COMPILER__Banco_Pruebas_unscanned_Debug /home/fernu/Projects/Banco_Pruebas/src/Ui/Components/Button.cpp || cmake_object_order_depends_target_Banco_Pruebas
+  DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -mno-direct-extern-access
+  INCLUDES = -I/home/fernu/Projects/Banco_Pruebas/cmake-build-debug/Banco_Pruebas_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtCharts -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtOpenGLWidgets
+  OBJECT_DIR = CMakeFiles/Banco_Pruebas.dir
+  OBJECT_FILE_DIR = CMakeFiles/Banco_Pruebas.dir/src/Ui/Components
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Banco_Pruebas
@@ -97,7 +105,7 @@ build CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.o: CXX_COMP
 #############################################
 # Link the executable Banco_Pruebas
 
-build Banco_Pruebas: CXX_EXECUTABLE_LINKER__Banco_Pruebas_Debug CMakeFiles/Banco_Pruebas.dir/Banco_Pruebas_autogen/mocs_compilation.cpp.o CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o CMakeFiles/Banco_Pruebas.dir/src/Tools/serialReader.cpp.o CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.o | /usr/lib/libQt6Charts.so.6.6.1 /usr/lib/libQt6OpenGLWidgets.so.6.6.1 /usr/lib/libQt6Widgets.so.6.6.1 /usr/lib/libQt6OpenGL.so.6.6.1 /usr/lib/libQt6Gui.so.6.6.1 /usr/lib/libQt6Core.so.6.6.1 /usr/lib/libGLX.so /usr/lib/libOpenGL.so || Banco_Pruebas_autogen Banco_Pruebas_autogen_timestamp_deps
+build Banco_Pruebas: CXX_EXECUTABLE_LINKER__Banco_Pruebas_Debug CMakeFiles/Banco_Pruebas.dir/Banco_Pruebas_autogen/mocs_compilation.cpp.o CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o CMakeFiles/Banco_Pruebas.dir/src/Tools/serialReader.cpp.o CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.o CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.o | /usr/lib/libQt6Charts.so.6.6.1 /usr/lib/libQt6OpenGLWidgets.so.6.6.1 /usr/lib/libQt6Widgets.so.6.6.1 /usr/lib/libQt6OpenGL.so.6.6.1 /usr/lib/libQt6Gui.so.6.6.1 /usr/lib/libQt6Core.so.6.6.1 /usr/lib/libGLX.so /usr/lib/libOpenGL.so || Banco_Pruebas_autogen Banco_Pruebas_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/libQt6Charts.so.6.6.1  /usr/lib/libQt6OpenGLWidgets.so.6.6.1  /usr/lib/libQt6Widgets.so.6.6.1  /usr/lib/libQt6OpenGL.so.6.6.1  /usr/lib/libQt6Gui.so.6.6.1  /usr/lib/libQt6Core.so.6.6.1  /usr/lib/libGLX.so  /usr/lib/libOpenGL.so
   OBJECT_DIR = CMakeFiles/Banco_Pruebas.dir

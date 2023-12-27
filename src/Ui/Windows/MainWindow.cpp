@@ -132,7 +132,7 @@ void MainWindow::setTime(QWidget &parent, QLabel &timeTitle, LinearChart &linear
     this->timer->setInterval(10);
 }
 
-// Inits or stops the test 
+// Inits or stops the test
 void MainWindow::checkIsInit() {
     if(this->isInit) {
         this->timer->start();
