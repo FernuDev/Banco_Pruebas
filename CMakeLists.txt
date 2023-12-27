@@ -21,6 +21,8 @@ add_executable(Banco_Pruebas
         src/Ui/Windows/MainWindow.h
         src/Ui/Components/LinearChart.cpp
         src/Ui/Components/LinearChart.h
+        src/Ui/Components/Button.cpp
+        src/Ui/Components/Button.h
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 

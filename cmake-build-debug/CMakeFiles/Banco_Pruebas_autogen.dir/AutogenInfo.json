@@ -362,6 +362,12 @@
 			null
 		],
 		[
+			"/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/Button.h",
+			"MU",
+			"NB2TH7KHI4/moc_Button.cpp",
+			null
+		],
+		[
 			"/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/LinearChart.h",
 			"MU",
 			"NB2TH7KHI4/moc_LinearChart.cpp",
@@ -445,6 +451,11 @@
 	[
 		[
 			"/home/fernu/Projects/Banco_Pruebas/src/Tools/serialReader.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/Button.cpp",
 			"MU",
 			null
 		],
