@@ -1,5 +1,4 @@
 /home/fernu/Projects/Banco_Pruebas/cmake-build-debug/CMakeFiles/Banco_Pruebas.dir
 /home/fernu/Projects/Banco_Pruebas/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/fernu/Projects/Banco_Pruebas/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/fernu/Projects/Banco_Pruebas/cmake-build-debug/CMakeFiles/Banco_Pruebas_autogen_timestamp_deps.dir
 /home/fernu/Projects/Banco_Pruebas/cmake-build-debug/CMakeFiles/Banco_Pruebas_autogen.dir

@@ -38,7 +38,6 @@ void MainWindow::setStyle(){
     contentTitle->setTextFormat(Qt::TextFormat::MarkdownText);
     contentTitle->setAlignment(Qt::AlignCenter);
 
-<<<<<<< HEAD
     // Example of QtChart
 
     auto *series = new QLineSeries(contentWidget);
@@ -84,8 +83,7 @@ void MainWindow::setStyle(){
     chartView->setGeometry(75, 240, 880, 520);
     chartView->setStyleSheet("color: white");
 
-=======
->>>>>>> dddf6729109eef3d5ef8e625e4251dac19df77ff
+
     // Buttons
 
     // Init/Stop test button

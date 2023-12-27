@@ -131,6 +131,12 @@
 		<Unit filename="/home/fernu/Projects/Banco_Pruebas/src/Tools/serialReader.h">
 			<Option target="Banco_Pruebas"/>
 		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/LinearChart.cpp">
+			<Option target="Banco_Pruebas"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/LinearChart.h">
+			<Option target="Banco_Pruebas"/>
+		</Unit>
 		<Unit filename="/home/fernu/Projects/Banco_Pruebas/src/Ui/Windows/MainWindow.cpp">
 			<Option target="Banco_Pruebas"/>
 		</Unit>
@@ -537,6 +543,30 @@
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
 		</Unit>
 		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\Qt6Gui\"/>
 		</Unit>
 		<Unit filename="/home/fernu/Projects/Banco_Pruebas/../../../../usr/lib/cmake/Qt6Gui/Qt6QTsLibPluginAdditionalTargetInfo.cmake">

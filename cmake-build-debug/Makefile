@@ -190,6 +190,30 @@ src/Tools/serialReader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banco_Pruebas.dir/build.make CMakeFiles/Banco_Pruebas.dir/src/Tools/serialReader.cpp.s
 .PHONY : src/Tools/serialReader.cpp.s
 
+src/Ui/Components/LinearChart.o: src/Ui/Components/LinearChart.cpp.o
+.PHONY : src/Ui/Components/LinearChart.o
+
+# target to build an object file
+src/Ui/Components/LinearChart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banco_Pruebas.dir/build.make CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.o
+.PHONY : src/Ui/Components/LinearChart.cpp.o
+
+src/Ui/Components/LinearChart.i: src/Ui/Components/LinearChart.cpp.i
+.PHONY : src/Ui/Components/LinearChart.i
+
+# target to preprocess a source file
+src/Ui/Components/LinearChart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banco_Pruebas.dir/build.make CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.i
+.PHONY : src/Ui/Components/LinearChart.cpp.i
+
+src/Ui/Components/LinearChart.s: src/Ui/Components/LinearChart.cpp.s
+.PHONY : src/Ui/Components/LinearChart.s
+
+# target to generate assembly for a file
+src/Ui/Components/LinearChart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banco_Pruebas.dir/build.make CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.s
+.PHONY : src/Ui/Components/LinearChart.cpp.s
+
 src/Ui/Windows/MainWindow.o: src/Ui/Windows/MainWindow.cpp.o
 .PHONY : src/Ui/Windows/MainWindow.o
 
@@ -254,6 +278,9 @@ help:
 	@echo "... src/Tools/serialReader.o"
 	@echo "... src/Tools/serialReader.i"
 	@echo "... src/Tools/serialReader.s"
+	@echo "... src/Ui/Components/LinearChart.o"
+	@echo "... src/Ui/Components/LinearChart.i"
+	@echo "... src/Ui/Components/LinearChart.s"
 	@echo "... src/Ui/Windows/MainWindow.o"
 	@echo "... src/Ui/Windows/MainWindow.i"
 	@echo "... src/Ui/Windows/MainWindow.s"
