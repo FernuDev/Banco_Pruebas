@@ -80,7 +80,7 @@ void MainWindow::setStyle(){
 
     series->attachAxis(axisX);
     series->attachAxis(axisY);
-    
+
     auto *chartView = new QChartView(chart, contentWidget);
     chartView->setRenderHint(QPainter::Antialiasing);
     chartView->setGeometry(75, 240, 880, 520);
