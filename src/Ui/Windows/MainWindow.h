@@ -12,43 +12,47 @@
 #include <QString>
 #include <QWidget>
 #include <QLabel>
-#include <QChart>
-#include <QLineSeries>
-#include <QChartView>
-#include <QPen>
 #include <QPushButton>
 #include <QCoreApplication>
 #include <QTimer>
-#include <QValueAxis>
+#include <utility>
+#include "../Components/LinearChart.h"
+
 
 class MainWindow : public QMainWindow {
 private:
     int width, height;
     std::string title;
     int time;
+    bool isInit;
+    QTimer *timer{};
 public:
 
-    MainWindow(int w, int h, std::string title) : width(w), height(h), title(std::move(title)) {
+     MainWindow(int w, int h, std::string title) :
+     width(w), height(h), title(std::move(title)),
+     isInit(false),time(0)
+     {
         this->setMinimumSize(this->width, this->height);
         this->setMaximumSize(this->width, this->height);
         this->setWindowTitle(QString::fromStdString(this->title));
-
-        this->time = 0;
-
         this->setStyle();
-    }
+
+        this->checkIsInit();
+     }
 
     ~MainWindow() override {
         std::cout<<"Finalizando aplicación..."<<std::endl;
     }
 
-    void Resize(float w, float h);
+    void Resize(int w, int h);
     void setStyle();
-void setTime(QWidget& parent, QLabel& title, QLineSeries& series, QValueAxis& axisX, QValueAxis& axisY);
-    // Getters and Setters
 
+    // Functionalities
+    void setTime(QWidget& parent, QLabel& title, LinearChart& linearChart);
+    void checkIsInit();
+    // Getters and Setters
     std::string getTitle();
-    void setTitle(std::string title);
+    void setTitle(std::string wTitle);
 
 public slots:
     void closeWindow();

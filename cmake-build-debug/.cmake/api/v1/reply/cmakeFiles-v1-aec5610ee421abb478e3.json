@@ -11,12 +11,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake"
 		},
 		{
 			"isGenerated" : true,
@@ -25,82 +25,67 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindCodeBlocks.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/ProcessorCount.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -141,37 +126,37 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -216,7 +201,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -225,32 +210,32 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindThreads.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindThreads.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -267,7 +252,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -280,17 +265,17 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -307,7 +292,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -360,7 +345,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -377,7 +362,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -390,27 +375,27 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindOpenGL.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindOpenGL.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -419,32 +404,32 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FeatureSummary.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FeatureSummary.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -453,27 +438,27 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindVulkan.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindVulkan.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -490,7 +475,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -527,7 +512,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -548,7 +533,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -593,7 +578,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/MacroAddFileDependencies.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/MacroAddFileDependencies.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -622,7 +607,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -643,7 +628,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -664,7 +649,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -685,7 +670,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -706,7 +691,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -727,7 +712,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -748,7 +733,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -769,7 +754,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -790,7 +775,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -811,7 +796,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -832,7 +817,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -853,7 +838,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -874,7 +859,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -895,7 +880,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -916,7 +901,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -937,7 +922,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -958,7 +943,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -979,7 +964,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1000,7 +985,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1021,7 +1006,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1037,12 +1022,54 @@
 		},
 		{
 			"isExternal" : true,
+			"path" : "/usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
 			"path" : "/usr/lib/cmake/Qt6Gui/Qt6QTsLibPluginConfig.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1063,7 +1090,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1084,7 +1111,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1105,7 +1132,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1126,7 +1153,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1147,7 +1174,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1168,7 +1195,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1189,7 +1216,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1210,7 +1237,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1231,7 +1258,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1260,7 +1287,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1281,7 +1308,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1338,7 +1365,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1359,7 +1386,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1400,7 +1427,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/fernu/Documents/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/home/fernu/Documents/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isExternal" : true,

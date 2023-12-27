@@ -4,17 +4,14 @@
 
 #include "MainWindow.h"
 
-#include <utility>
 
-
-void MainWindow::Resize(float w, float h) {
+void MainWindow::Resize(int w, int h) {
     this->resize(w, h);
 }
 
 void MainWindow::setStyle(){
 
     //border: 2px solid red
-
     this->setStyleSheet("background-color: #28282C; color: white");
     auto *centralWidget = new QWidget(this);
     centralWidget->resize(this->width, this->height);
@@ -41,6 +38,7 @@ void MainWindow::setStyle(){
     contentTitle->setTextFormat(Qt::TextFormat::MarkdownText);
     contentTitle->setAlignment(Qt::AlignCenter);
 
+<<<<<<< HEAD
     // Example of QtChart
 
     auto *series = new QLineSeries(contentWidget);
@@ -86,42 +84,63 @@ void MainWindow::setStyle(){
     chartView->setGeometry(75, 240, 880, 520);
     chartView->setStyleSheet("color: white");
 
+=======
+>>>>>>> dddf6729109eef3d5ef8e625e4251dac19df77ff
     // Buttons
 
+    // Init/Stop test button
+    auto *startBtn = new QPushButton(contentWidget);
+    startBtn->setText("Start");
+    startBtn->setGeometry(105, 90, 100, 50);
     // Exit button
     auto *exitBtn = new QPushButton(sideBar);
     exitBtn->setText("X");
     exitBtn->setGeometry(90, 900, 100, 30);
 
-    // Connection to the actions in the button
-    connect(exitBtn, &QPushButton::clicked, this, &MainWindow::closeWindow);
-
+    // Using LinearChart class
+    auto *linearChart = new LinearChart(contentWidget);
+    linearChart->setGeometry(75, 240, 880, 520);
 
     // Timer
 
     auto *timeTitle = new QLabel(contentWidget);
     timeTitle->setTextFormat(Qt::MarkdownText);
     timeTitle->setText("# 0");
-    timeTitle->setGeometry(950, 20, 100, 50);
+    timeTitle->setGeometry(950, 20, 100, 30);
     timeTitle->setAlignment(Qt::AlignCenter);
 
-   this->setTime(*contentWidget, *timeTitle, *series, *axisX, *axisY);
+    this->setTime(*contentWidget, *timeTitle, *linearChart);
+
+    // Connection to the actions in the button
+    connect(exitBtn, &QPushButton::clicked, this, &MainWindow::closeWindow);
+    connect(startBtn, &QPushButton::pressed, this, [=]()  {
+        this->isInit = !isInit;
+        this->checkIsInit();
+    });
+
 }
 
 // Functionalities
 
-void MainWindow::setTime(QWidget &parent, QLabel &timeTitle, QLineSeries &series, QValueAxis &axisX, QValueAxis &axisY) {
-    auto *timer = new QTimer(&parent);
+void MainWindow::setTime(QWidget &parent, QLabel &timeTitle, LinearChart &linearChart) {
+    this->timer = new QTimer(&parent);
 
-    connect(timer, &QTimer::timeout, &parent, [=, &timeTitle, &series, &axisX, &axisY]() mutable {
-       this->time += 1;
-       axisX.setRange(0, this->time + 10);
-       series.append(this->time, qSin(this->time / 10.0));
-       timeTitle.setText("# "+QString::number(this->time));
+    connect(timer, &QTimer::timeout, &parent, [=, &timeTitle, &linearChart]() mutable{
+        this->time += 1;
+        linearChart.appendSeries(this->time, qSin(this->time / 10.0), this->time);
+        timeTitle.setText("# "+QString::number(this->time));
     });
 
-    timer->setInterval(10);
-    timer->start();
+    this->timer->setInterval(10);
+}
+
+// Inits or stops the test 
+void MainWindow::checkIsInit() {
+    if(this->isInit) {
+        this->timer->start();
+    }else {
+        this->timer->stop();
+    }
 }
 
 // Getters and Setters
@@ -130,8 +149,8 @@ std::string MainWindow::getTitle() {
     return this->title;
 }
 
-void MainWindow::setTitle(std::string title) {
-    this->title = std::move(title);
+void MainWindow::setTitle(std::string wTitle) {
+    this->title = std::move(wTitle);
     this->setWindowTitle(QString::fromStdString(this->title));
 }
 
