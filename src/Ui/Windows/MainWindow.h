@@ -16,8 +16,10 @@
 #include <QCoreApplication>
 #include <QTimer>
 #include <utility>
-#include "../Components/LinearChart.h"
 
+// Components
+#include "../Components/LinearChart.h"
+#include "../Components/Button.h"
 
 class MainWindow : public QMainWindow {
 private:

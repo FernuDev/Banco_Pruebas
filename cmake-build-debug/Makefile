@@ -190,6 +190,30 @@ src/Tools/serialReader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banco_Pruebas.dir/build.make CMakeFiles/Banco_Pruebas.dir/src/Tools/serialReader.cpp.s
 .PHONY : src/Tools/serialReader.cpp.s
 
+src/Ui/Components/Button.o: src/Ui/Components/Button.cpp.o
+.PHONY : src/Ui/Components/Button.o
+
+# target to build an object file
+src/Ui/Components/Button.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banco_Pruebas.dir/build.make CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.o
+.PHONY : src/Ui/Components/Button.cpp.o
+
+src/Ui/Components/Button.i: src/Ui/Components/Button.cpp.i
+.PHONY : src/Ui/Components/Button.i
+
+# target to preprocess a source file
+src/Ui/Components/Button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banco_Pruebas.dir/build.make CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.i
+.PHONY : src/Ui/Components/Button.cpp.i
+
+src/Ui/Components/Button.s: src/Ui/Components/Button.cpp.s
+.PHONY : src/Ui/Components/Button.s
+
+# target to generate assembly for a file
+src/Ui/Components/Button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banco_Pruebas.dir/build.make CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.s
+.PHONY : src/Ui/Components/Button.cpp.s
+
 src/Ui/Components/LinearChart.o: src/Ui/Components/LinearChart.cpp.o
 .PHONY : src/Ui/Components/LinearChart.o
 
@@ -278,6 +302,9 @@ help:
 	@echo "... src/Tools/serialReader.o"
 	@echo "... src/Tools/serialReader.i"
 	@echo "... src/Tools/serialReader.s"
+	@echo "... src/Ui/Components/Button.o"
+	@echo "... src/Ui/Components/Button.i"
+	@echo "... src/Ui/Components/Button.s"
 	@echo "... src/Ui/Components/LinearChart.o"
 	@echo "... src/Ui/Components/LinearChart.i"
 	@echo "... src/Ui/Components/LinearChart.s"

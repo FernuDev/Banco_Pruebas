@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/fernu/Projects/Banco_Pruebas/cmake-build-debug/Banco_Pruebas_autogen/mocs_compilation.cpp" "CMakeFiles/Banco_Pruebas.dir/Banco_Pruebas_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Banco_Pruebas.dir/Banco_Pruebas_autogen/mocs_compilation.cpp.o.d"
   "/home/fernu/Projects/Banco_Pruebas/src/Tools/serialReader.cpp" "CMakeFiles/Banco_Pruebas.dir/src/Tools/serialReader.cpp.o" "gcc" "CMakeFiles/Banco_Pruebas.dir/src/Tools/serialReader.cpp.o.d"
+  "/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/Button.cpp" "CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.o" "gcc" "CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.o.d"
   "/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/LinearChart.cpp" "CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.o" "gcc" "CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.o.d"
   "/home/fernu/Projects/Banco_Pruebas/src/Ui/Windows/MainWindow.cpp" "CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o" "gcc" "CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o.d"
   "/home/fernu/Projects/Banco_Pruebas/src/main.cpp" "CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o" "gcc" "CMakeFiles/Banco_Pruebas.dir/src/main.cpp.o.d"

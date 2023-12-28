@@ -10,6 +10,10 @@
 #include <QPen>
 #include <QValueAxis>
 #include <QChartView>
+#include <QFileDialog>
+#include <fstream>
+#include <iostream>
+
 
 
 class LinearChart : public QChartView {
@@ -71,11 +75,14 @@ public:
         this->setRenderHint(QPainter::Antialiasing);
         this->setStyleSheet("color:white");
         this->setChart(this->chart);
+
         this->show();
     };
     void appendSeries(double x, double y);
     void appendSeries(double x, double y, int time);
     void setLineSeries(QLineSeries *Series);
+    void exportToCSV(int Time);
+    void exportToEngine(int Time);
 };
 
 

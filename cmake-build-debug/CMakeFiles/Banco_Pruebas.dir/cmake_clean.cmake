@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Banco_Pruebas.dir/Banco_Pruebas_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/Banco_Pruebas.dir/src/Tools/serialReader.cpp.o"
   "CMakeFiles/Banco_Pruebas.dir/src/Tools/serialReader.cpp.o.d"
+  "CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.o"
+  "CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/Button.cpp.o.d"
   "CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.o"
   "CMakeFiles/Banco_Pruebas.dir/src/Ui/Components/LinearChart.cpp.o.d"
   "CMakeFiles/Banco_Pruebas.dir/src/Ui/Windows/MainWindow.cpp.o"

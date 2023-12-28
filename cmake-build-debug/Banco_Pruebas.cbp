@@ -131,6 +131,12 @@
 		<Unit filename="/home/fernu/Projects/Banco_Pruebas/src/Tools/serialReader.h">
 			<Option target="Banco_Pruebas"/>
 		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/Button.cpp">
+			<Option target="Banco_Pruebas"/>
+		</Unit>
+		<Unit filename="/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/Button.h">
+			<Option target="Banco_Pruebas"/>
+		</Unit>
 		<Unit filename="/home/fernu/Projects/Banco_Pruebas/src/Ui/Components/LinearChart.cpp">
 			<Option target="Banco_Pruebas"/>
 		</Unit>
