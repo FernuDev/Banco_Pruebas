@@ -38,62 +38,25 @@ void MainWindow::setStyle(){
     contentTitle->setTextFormat(Qt::TextFormat::MarkdownText);
     contentTitle->setAlignment(Qt::AlignCenter);
 
-    // Example of QtChart
-
-    auto *series = new QLineSeries(contentWidget);
-
-    series->setUseOpenGL(true);
-
-    // Pen for modify the line width and color
-    auto *pen = new QPen();
-    pen->setWidth(4);
-    pen->setColor("#257e95");
-    series->setPen(*pen);
-
-    // Custom axes
-    auto *axisX = new QValueAxis;
-    auto *axisY = new QValueAxis;
-
-    // Establishment limits for axis
-    axisX->setRange(-10, 110);
-    axisX->setTitleText("Tiempo [ds]");
-    axisY->setRange(-5, 5);
-    axisY->setTitleText("Empuje [N]");
-
-    axisX->setTitleBrush(QBrush(Qt::white));
-    axisY->setTitleBrush(QBrush(Qt::white));
-    axisX->setLabelsBrush(QBrush(Qt::white));
-    axisY->setLabelsBrush(QBrush(Qt::white));
-    axisX->setGridLineVisible(false);
-    axisY->setGridLineVisible(false);
-
-    auto *chart = new QChart();
-    chart->addSeries(series);
-    chart->setTitle("Empuje-Tiempo");
-    chart->addAxis(axisX, Qt::AlignBottom);
-    chart->addAxis(axisY, Qt::AlignLeft);
-    chart->setBackgroundBrush(QBrush(QColor(0,0,0,0)));
-    chart->setTitleBrush(QBrush(Qt::white));
-
-    series->attachAxis(axisX);
-    series->attachAxis(axisY);
-
-    auto *chartView = new QChartView(chart, contentWidget);
-    chartView->setRenderHint(QPainter::Antialiasing);
-    chartView->setGeometry(75, 240, 880, 520);
-    chartView->setStyleSheet("color: white");
-
-
     // Buttons
 
     // Init/Stop test button
-    auto *startBtn = new QPushButton(contentWidget);
-    startBtn->setText("Start");
-    startBtn->setGeometry(105, 90, 100, 50);
+    auto *startBtn = new Button(contentWidget, "Start");
+    startBtn->setGeometry(105, 90, 100, 30);
+    startBtn->setStyleSheet("font-size: 16px; font-weight: regular");
+
+
     // Exit button
-    auto *exitBtn = new QPushButton(sideBar);
-    exitBtn->setText("X");
+    auto *exitBtn = new Button(sideBar, "X");
     exitBtn->setGeometry(90, 900, 100, 30);
+
+    // Export  CSV button
+    auto *exportBtn = new Button(contentWidget, "Export CSV");
+    exportBtn->setGeometry(305, 90, 100, 30 );
+
+    // Export Engine button
+    auto *export2Btn = new Button(contentWidget, "Export ENG");
+    export2Btn->setGeometry(205, 90, 100, 30);
 
     // Using LinearChart class
     auto *linearChart = new LinearChart(contentWidget);
@@ -107,15 +70,26 @@ void MainWindow::setStyle(){
     timeTitle->setGeometry(950, 20, 100, 30);
     timeTitle->setAlignment(Qt::AlignCenter);
 
-    this->setTime(*contentWidget, *timeTitle, *linearChart);
-
     // Connection to the actions in the button
     connect(exitBtn, &QPushButton::clicked, this, &MainWindow::closeWindow);
     connect(startBtn, &QPushButton::pressed, this, [=]()  {
         this->isInit = !isInit;
+        startBtn->setText("Stop");
         this->checkIsInit();
     });
 
+    // Exports buttons
+    connect(exportBtn, &QPushButton::pressed, this, [=] () {
+        linearChart->exportToCSV(this->time);
+        std::cout<<"Export your results ..."<<std::endl;
+    });
+
+    connect(export2Btn, &QPushButton::pressed, this, [=] (){
+        linearChart->exportToEngine(this->time);
+        std::cout<<"Export your engine..."<<std::endl;
+    });
+
+    this->setTime(*contentWidget, *timeTitle, *linearChart);
 }
 
 // Functionalities
@@ -125,7 +99,7 @@ void MainWindow::setTime(QWidget &parent, QLabel &timeTitle, LinearChart &linear
 
     connect(timer, &QTimer::timeout, &parent, [=, &timeTitle, &linearChart]() mutable{
         this->time += 1;
-        linearChart.appendSeries(this->time, qSin(this->time / 10.0), this->time);
+        linearChart.appendSeries(this->time, qSin(this->time / 10.0)*3, this->time);
         timeTitle.setText("# "+QString::number(this->time));
     });
 
