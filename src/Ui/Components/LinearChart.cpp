@@ -10,7 +10,7 @@ void LinearChart::appendSeries(double x, double y) {
 }
 
 void LinearChart::appendSeries(double x, double y, int time) {
-    this->axisX->setRange(0, time + 10);
+    this->axisX->setRange(0, (time/10.0)+0.5);
     this->series->append(x, y);
 }
 
@@ -34,7 +34,7 @@ void LinearChart::exportToCSV(int Time) {
     }
 
     for(int i=0;i<Time;i++){
-        data+= std::to_string(this->series->at(i).x()) + ", " + std::to_string(this->series->at(i).y()) + "\n";
+        data+= std::to_string(this->series->at(i).x()/10.0) + ", " + std::to_string(this->series->at(i).y()) + "\n";
     }
 
     engine.open("../src/DataScience/Engine/Prueba.cvs", std::fstream::out);
@@ -46,12 +46,16 @@ void LinearChart::exportToCSV(int Time) {
 void LinearChart::exportToEngine(int Time) {
     std::ofstream engine;
     std::string data;
+    std::string filePath;
+    auto *uid = new uuid::UUID();
 
     for(int i=0;i<Time;i++){
-        data+= std::to_string(this->series->at(i).x() / 10.0) + " " + std::to_string(this->series->at(i).y()) + "\n";
+        data+= std::to_string(this->series->at(i).x()/10.0) + " " + std::to_string(this->series->at(i).y()) + "\n";
     }
 
-    engine.open("../src/DataScience/Engine/Prueba.eng", std::fstream::out);
+    filePath = "../src/DataScience/Engine/" + uid->generate_uid() + ".eng";
+
+    engine.open(filePath, std::fstream::out);
     engine << "MS1-41  15  120  P  0.02  0.060  Antares\n";
     engine << data;
     engine.close();

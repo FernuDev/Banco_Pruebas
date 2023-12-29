@@ -5,21 +5,28 @@
 #ifndef BANCO_PRUEBAS_MAINWINDOW_H
 #define BANCO_PRUEBAS_MAINWINDOW_H
 
-#include <QMainWindow>
+// STD Libraries
 #include <iostream>
 #include <string>
 #include <utility>
+#include <chrono>
+
+// QT Libraries
+#include <QMainWindow>
 #include <QString>
 #include <QWidget>
 #include <QLabel>
 #include <QPushButton>
 #include <QCoreApplication>
 #include <QTimer>
-#include <utility>
+#include <QThread>
 
 // Components
 #include "../Components/LinearChart.h"
 #include "../Components/Button.h"
+
+// Tools and own headers
+#include "../../Tools/Uuid.h"
 
 class MainWindow : public QMainWindow {
 private:
@@ -50,8 +57,11 @@ public:
     void setStyle();
 
     // Functionalities
-    void setTime(QWidget& parent, QLabel& title, LinearChart& linearChart);
+    void setTime(QWidget &parent, QLabel &title);
+    void updateTime(QWidget &parent);
+    void updateChart(QWidget &parent, LinearChart &linearChart);
     void checkIsInit();
+
     // Getters and Setters
     std::string getTitle();
     void setTitle(std::string wTitle);

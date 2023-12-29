@@ -14,6 +14,9 @@
 #include <fstream>
 #include <iostream>
 
+// Tools and Own headers
+
+#include "../../Tools/Uuid.h"
 
 
 class LinearChart : public QChartView {
@@ -28,7 +31,7 @@ public:
 
         // Initializing values
         this->series = new QLineSeries(this);
-        this->series->setUseOpenGL(true); // Fading the line
+        this->series->setUseOpenGL(false); // Fading the line
 
         // Pen fot modify the line width and color
 
@@ -54,7 +57,7 @@ public:
         this->axisY->setGridLineVisible(false);
 
         // Establishment limits for axis
-        this->axisX->setRange(-10, 110);
+        this->axisX->setRange(-10, 10);
         this->axisX->setTitleText("Tiempo [ds]");
         this->axisY->setRange(-5, 5);
         this->axisY->setTitleText("Empuje [N]");

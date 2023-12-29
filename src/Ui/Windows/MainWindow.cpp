@@ -82,6 +82,8 @@ void MainWindow::setStyle(){
     connect(exportBtn, &QPushButton::pressed, this, [=] () {
         linearChart->exportToCSV(this->time);
         std::cout<<"Export your results ..."<<std::endl;
+        auto *uid = new uuid::UUID();
+        std::cout<<"Uuid: "<<uid->generate_uid()<<"-EngineTest.cvs"<<std::endl;
     });
 
     connect(export2Btn, &QPushButton::pressed, this, [=] (){
@@ -89,21 +91,32 @@ void MainWindow::setStyle(){
         std::cout<<"Export your engine..."<<std::endl;
     });
 
-    this->setTime(*contentWidget, *timeTitle, *linearChart);
+    this->updateTime(*contentWidget);
+    this->setTime(*contentWidget, *timeTitle);
+    this->updateChart(*contentWidget, *linearChart);
 }
 
 // Functionalities
 
-void MainWindow::setTime(QWidget &parent, QLabel &timeTitle, LinearChart &linearChart) {
+void MainWindow::updateTime(QWidget &parent) {
     this->timer = new QTimer(&parent);
-
-    connect(timer, &QTimer::timeout, &parent, [=, &timeTitle, &linearChart]() mutable{
-        this->time += 1;
-        linearChart.appendSeries(this->time, qSin(this->time / 10.0)*3, this->time);
-        timeTitle.setText("# "+QString::number(this->time));
+    connect(timer, &QTimer::timeout, &parent, [=]() {
+        ++this->time;
     });
-
+    // Time set each 0.01 seg
     this->timer->setInterval(10);
+}
+
+void MainWindow::setTime(QWidget &parent, QLabel &timeTitle) {
+    connect(timer, &QTimer::timeout, &parent, [=, &timeTitle]() {
+        timeTitle.setText("# "+QString::number(this->time /100.0)); // Formatting time text
+    });
+}
+
+void MainWindow::updateChart(QWidget &parent, LinearChart &linearChart) {
+    connect(this->timer, &QTimer::timeout, &parent, [=, &linearChart](){
+        linearChart.appendSeries(this->time/10.0, qSin(this->time / 10.0)*3, this->time); // Calculating any information
+    });
 }
 
 // Inits or stops the test
@@ -129,7 +142,6 @@ void MainWindow::setTitle(std::string wTitle) {
 void MainWindow::closeWindow() {
     this->close();
 }
-
 
 
 
