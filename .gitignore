@@ -1,7 +1,6 @@
 /build
 /venv
 /cmake-build-debug
-./src/DataScience/venv/
 # Engine and csv results
 
 *.eng
