@@ -115,8 +115,12 @@ void MainWindow::setTime(QWidget &parent, QLabel &timeTitle) {
 
 void MainWindow::updateChart(QWidget &parent, LinearChart &linearChart) {
     connect(this->timer, &QTimer::timeout, &parent, [=, &linearChart](){
-        linearChart.appendSeries(this->time/10.0, qSin(this->time / 10.0)*3, this->time); // Calculating any information
+        linearChart.appendSeries(this->time/100.0,this->auxEmpuje(this->time/100.0), this->time); // Calculating any information
     });
+}
+
+float MainWindow::auxEmpuje(double Time) {
+    return -0.0057*pow(Time, 6) +0.1924*pow(Time, 5) -2.3563*pow(Time,4) + 15.8692*pow(Time, 3) - 62.8779*pow(Time, 2) + 133.6287*Time;
 }
 
 // Inits or stops the test

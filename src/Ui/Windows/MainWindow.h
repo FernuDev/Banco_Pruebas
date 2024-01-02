@@ -10,6 +10,7 @@
 #include <string>
 #include <utility>
 #include <chrono>
+#include <cmath>
 
 // QT Libraries
 #include <QMainWindow>
@@ -61,6 +62,7 @@ public:
     void updateTime(QWidget &parent);
     void updateChart(QWidget &parent, LinearChart &linearChart);
     void checkIsInit();
+    float auxEmpuje(double Time);
 
     // Getters and Setters
     std::string getTitle();

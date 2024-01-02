@@ -11,6 +11,10 @@
 #include <QValueAxis>
 #include <QChartView>
 #include <QFileDialog>
+#include <QProcess>
+
+// STD libraries
+#include <map>
 #include <fstream>
 #include <iostream>
 
@@ -25,6 +29,8 @@ private:
     QLineSeries *series;
     QValueAxis *axisX, *axisY;
     QPen *pen;
+    float min, max;
+    std::map <float, float> Data;
 public:
     explicit LinearChart(QWidget *parent){
         this->setParent(parent);
@@ -81,11 +87,23 @@ public:
 
         this->show();
     };
-    void appendSeries(double x, double y);
-    void appendSeries(double x, double y, int time);
-    void setLineSeries(QLineSeries *Series);
+
     void exportToCSV(int Time);
     void exportToEngine(int Time);
+
+    // Getters and setters
+
+    void appendSeries(double x, double y);
+    void appendSeries(double x, double y, int Time);
+    void setLineSeries(QLineSeries *Series);
+
+    void setMin();
+    float getMin() const;
+    void setMax();
+    float getMax() const;
+
+    std::map <float, float> getData();
+    void setData(int Time);
 };
 
 
