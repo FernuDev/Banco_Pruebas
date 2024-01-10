@@ -16,19 +16,22 @@ void LinearChart::appendSeries(double x, double y, int time) {
     this->setMax();
 
     this->series->append(x, y);
-    this->axisX->setRange(0, (time/100.0)+0.5);
+    this->axisX->setRange(0, (time/10.0)+0.5);
     this->axisY->setRange(this->getMin() - 5, this->getMax() + 10);
 
 
 }
 
 void LinearChart::setMin() {
+
+    // Setting the min element with std::min_element
+
     auto Min = std::min_element(std::begin(this->Data), std::end(this->Data),
                                 [=](const auto &l, const auto &r){
                                         return l.second < r.second;
     });
 
-    std::cout<<"Min: "<<std::to_string(Min->second)<<std::endl;
+    // std::cout<<"Min: "<<std::to_string(Min->second)<<std::endl;
     this->min = Min->second;
 }
 
@@ -42,7 +45,7 @@ void LinearChart::setMax() {
                                 return l.second < r.second;
     });
 
-    std::cout<<"Max: "<<std::to_string(Max->second)<<std::endl;
+    // std::cout<<"Max: "<<std::to_string(Max->second)<<std::endl;
     this->max = Max->second;
 }
 

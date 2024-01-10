@@ -28,26 +28,31 @@
 
 // Tools and own headers
 #include "../../Tools/Uuid.h"
+#include "../../Tools/SerialReader.h"
 
 class MainWindow : public QMainWindow {
 private:
     int width, height;
+    double empuje;
     std::string title;
     int time;
     bool isInit;
     QTimer *timer{};
+    SerialReader *serialReader{};
 public:
 
      MainWindow(int w, int h, std::string title) :
      width(w), height(h), title(std::move(title)),
-     isInit(false),time(0)
+     isInit(false),time(0), empuje(0)
      {
         this->setMinimumSize(this->width, this->height);
         this->setMaximumSize(this->width, this->height);
         this->setWindowTitle(QString::fromStdString(this->title));
         this->setStyle();
-
         this->checkIsInit();
+
+        char *portName = "/dev/ttyUSB0";
+        this->serialReader = new SerialReader(portName, 9600);
      }
 
     ~MainWindow() override {
@@ -61,6 +66,7 @@ public:
     void setTime(QWidget &parent, QLabel &title);
     void updateTime(QWidget &parent);
     void updateChart(QWidget &parent, LinearChart &linearChart);
+    void callSerialRead(QWidget &parent);
     void checkIsInit();
     float auxEmpuje(double Time);
 

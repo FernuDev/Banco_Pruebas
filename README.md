@@ -9,7 +9,8 @@ Posteriormente nos conectamos a una salida serial mediante un Hx711 que nos perm
 los datos de la galga cada ds (deci segundos)
 
 Una vez terminada la prueba se realiza de manera automatica un analisis de propulsión mediante el uso de 
-**JupyterNotebooks** y ciencia de datos con Python.
+**JupyterNotebooks** y ciencia de datos con Python para retornar datos importantes de la prueba de motor como el empuje maximo, 
+el impulso total y especifico y demas consideraciones necesarias para un correcto analisis de motor.
 
 ### Instalación
 

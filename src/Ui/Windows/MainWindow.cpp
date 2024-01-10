@@ -38,6 +38,13 @@ void MainWindow::setStyle(){
     contentTitle->setTextFormat(Qt::TextFormat::MarkdownText);
     contentTitle->setAlignment(Qt::AlignCenter);
 
+    auto *motorTitle = new QLabel(contentWidget);
+    motorTitle->setText("# Configuracion de motor");
+    motorTitle->setGeometry(1050, 70, 350, 50);
+    motorTitle->setStyleSheet("font-size: 12px");
+    motorTitle->setTextFormat(Qt::MarkdownText);
+    motorTitle->setAlignment(Qt::AlignCenter);
+
     // Buttons
 
     // Init/Stop test button
@@ -100,27 +107,27 @@ void MainWindow::setStyle(){
 
 void MainWindow::updateTime(QWidget &parent) {
     this->timer = new QTimer(&parent);
-    connect(timer, &QTimer::timeout, &parent, [=]() {
+    connect(this->timer, &QTimer::timeout, &parent, [=]() {
         ++this->time;
     });
     // Time set each 0.01 seg
-    this->timer->setInterval(10);
+    this->timer->setInterval(100);
 }
 
 void MainWindow::setTime(QWidget &parent, QLabel &timeTitle) {
-    connect(timer, &QTimer::timeout, &parent, [=, &timeTitle]() {
-        timeTitle.setText("# "+QString::number(this->time /100.0)); // Formatting time text
+    connect(this->timer, &QTimer::timeout, &parent, [=, &timeTitle]() {
+        timeTitle.setText("# "+QString::number(this->time /10.0)); // Formatting time text
     });
 }
 
 void MainWindow::updateChart(QWidget &parent, LinearChart &linearChart) {
     connect(this->timer, &QTimer::timeout, &parent, [=, &linearChart](){
-        linearChart.appendSeries(this->time/100.0,this->auxEmpuje(this->time/100.0), this->time); // Calculating any information
+        linearChart.appendSeries(this->time/10.0,serialReader->readFromSerial(), this->time);
     });
 }
 
 float MainWindow::auxEmpuje(double Time) {
-    return -0.0057*pow(Time, 6) +0.1924*pow(Time, 5) -2.3563*pow(Time,4) + 15.8692*pow(Time, 3) - 62.8779*pow(Time, 2) + 133.6287*Time;
+    return -0.0057*pow(Time, 6) +0.1924*pow(Time, 5) - 2.3563*pow(Time,4) + 15.8692*pow(Time, 3) - 62.8779*pow(Time, 2) + 133.6287*Time;
 }
 
 // Inits or stops the test
@@ -145,6 +152,7 @@ void MainWindow::setTitle(std::string wTitle) {
 
 void MainWindow::closeWindow() {
     this->close();
+    //this->serialReader->closePort();
 }
 
 

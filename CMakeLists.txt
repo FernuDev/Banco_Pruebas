@@ -15,8 +15,6 @@ find_package(Qt6 COMPONENTS Core Gui Widgets Charts REQUIRED)
 
 add_executable(Banco_Pruebas
         src/main.cpp
-        src/Tools/serialReader.cpp
-        src/Tools/serialReader.h
         src/Ui/Windows/MainWindow.cpp
         src/Ui/Windows/MainWindow.h
         src/Ui/Components/LinearChart.cpp
@@ -24,6 +22,9 @@ add_executable(Banco_Pruebas
         src/Ui/Components/Button.cpp
         src/Ui/Components/Button.h
         src/Tools/Uuid.h
+        src/Tools/SerialReader.h
+        src/Tools/SerialReader.cpp
+        src/Tools/SerialReader.cpp
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 
