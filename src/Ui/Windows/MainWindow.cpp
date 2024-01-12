@@ -11,7 +11,6 @@ void MainWindow::Resize(int w, int h) {
 
 void MainWindow::setStyle(){
 
-    //border: 2px solid red
     this->setStyleSheet("background-color: #28282C; color: white");
     auto *centralWidget = new QWidget(this);
     centralWidget->resize(this->width, this->height);
@@ -39,7 +38,7 @@ void MainWindow::setStyle(){
     contentTitle->setAlignment(Qt::AlignCenter);
 
     auto *motorTitle = new QLabel(contentWidget);
-    motorTitle->setText("# Configuracion de motor");
+    motorTitle->setText("# Configuración de motor");
     motorTitle->setGeometry(1050, 70, 350, 50);
     motorTitle->setStyleSheet("font-size: 12px");
     motorTitle->setTextFormat(Qt::MarkdownText);
@@ -77,7 +76,63 @@ void MainWindow::setStyle(){
     timeTitle->setGeometry(950, 20, 100, 30);
     timeTitle->setAlignment(Qt::AlignCenter);
 
+    // Setup Motor and Serial Port
+
+    auto *connectPortBtn = new Button(contentWidget, "Connect");
+    connectPortBtn->setGeometry(1050, 650, 400, 40);
+
+    auto *portTitle = new QLabel(contentWidget);
+    portTitle->setGeometry(1050, 150, 150, 40);
+    portTitle->setText("## Puerto serial");
+    portTitle->setTextFormat(Qt::MarkdownText);
+    portTitle->setAlignment(Qt::AlignLeft);
+
+    auto *portLine = new QLineEdit(contentWidget);
+    portLine->setGeometry(1250, 150, 200, 40);
+    portLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
+    auto *motorMassTitle = new QLabel(contentWidget);
+    motorMassTitle->setGeometry(1050, 250, 200, 40);
+    motorMassTitle->setText("## Masa de propelente");
+    motorMassTitle->setTextFormat(Qt::MarkdownText);
+    motorMassTitle->setAlignment(Qt::AlignLeft);
+
+    auto *motorMassLine = new QLineEdit(contentWidget);
+    motorMassLine->setGeometry(1250, 250, 200, 40);
+    motorMassLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
+    auto *motorNameTitle = new QLabel(contentWidget);
+    motorNameTitle->setGeometry(1050, 350, 200, 40);
+    motorNameTitle->setText("## Nombre Motor");
+    motorNameTitle->setTextFormat(Qt::MarkdownText);
+    motorNameTitle->setAlignment(Qt::AlignLeft);
+
+    auto *motorNameLine = new QLineEdit(contentWidget);
+    motorNameLine->setGeometry(1250, 350, 200, 40);
+    motorNameLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
+    auto *motorDiameterTitle = new QLabel(contentWidget);
+    motorDiameterTitle->setGeometry(1050, 450, 200, 40);
+    motorDiameterTitle->setText("## Diametro Motor");
+    motorDiameterTitle->setTextFormat(Qt::MarkdownText);
+    motorDiameterTitle->setAlignment(Qt::AlignLeft);
+
+    auto *motorDiameterLine = new QLineEdit(contentWidget);
+    motorDiameterLine->setGeometry(1250, 450, 200, 40);
+    motorDiameterLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
+    auto *motorLongTitle = new QLabel(contentWidget);
+    motorLongTitle->setGeometry(1050, 550, 200, 40);
+    motorLongTitle->setText("## Longitud Motor");
+    motorLongTitle->setTextFormat(Qt::MarkdownText);
+    motorLongTitle->setAlignment(Qt::AlignLeft);
+
+    auto *motorLongLine = new QLineEdit(contentWidget);
+    motorLongLine->setGeometry(1250, 550, 200, 40);
+    motorLongLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
     // Connection to the actions in the button
+
     connect(exitBtn, &QPushButton::clicked, this, &MainWindow::closeWindow);
     connect(startBtn, &QPushButton::pressed, this, [=]()  {
         this->isInit = !isInit;
@@ -89,8 +144,6 @@ void MainWindow::setStyle(){
     connect(exportBtn, &QPushButton::pressed, this, [=] () {
         linearChart->exportToCSV(this->time);
         std::cout<<"Export your results ..."<<std::endl;
-        auto *uid = new uuid::UUID();
-        std::cout<<"Uuid: "<<uid->generate_uid()<<"-EngineTest.cvs"<<std::endl;
     });
 
     connect(export2Btn, &QPushButton::pressed, this, [=] (){
@@ -108,7 +161,7 @@ void MainWindow::setStyle(){
 void MainWindow::updateTime(QWidget &parent) {
     this->timer = new QTimer(&parent);
     connect(this->timer, &QTimer::timeout, &parent, [=]() {
-        ++this->time;
+        ++time;
     });
     // Time set each 0.01 seg
     this->timer->setInterval(100);
@@ -127,7 +180,7 @@ void MainWindow::updateChart(QWidget &parent, LinearChart &linearChart) {
 }
 
 float MainWindow::auxEmpuje(double Time) {
-    return -0.0057*pow(Time, 6) +0.1924*pow(Time, 5) - 2.3563*pow(Time,4) + 15.8692*pow(Time, 3) - 62.8779*pow(Time, 2) + 133.6287*Time;
+    return - 0.0057*pow(Time, 6) +0.1924*pow(Time, 5) - 2.3563*pow(Time,4) + 15.8692*pow(Time, 3) - 62.8779*pow(Time, 2) + 133.6287*Time;
 }
 
 // Inits or stops the test

@@ -12,6 +12,7 @@
 #include <QChartView>
 #include <QFileDialog>
 #include <QProcess>
+#include <QFont>
 
 // STD libraries
 #include <map>
@@ -32,7 +33,7 @@ private:
     float min, max;
     std::map <float, float> Data;
 public:
-    explicit LinearChart(QWidget *parent){
+    explicit LinearChart(QWidget *parent) : min(-5.0), max(10.0){
         this->setParent(parent);
 
         // Initializing values

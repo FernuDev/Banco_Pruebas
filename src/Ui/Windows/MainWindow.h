@@ -21,6 +21,7 @@
 #include <QCoreApplication>
 #include <QTimer>
 #include <QThread>
+#include <QLineEdit>
 
 // Components
 #include "../Components/LinearChart.h"

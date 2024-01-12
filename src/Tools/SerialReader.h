@@ -27,14 +27,17 @@ private:
     int bandRate;
     int serial_port;
     float empuje;
+
+    bool connection_enabled;
 public:
     SerialReader(char *port, int bandRate)
-    : portName(port), bandRate(bandRate), serial_port(0), empuje(0)
+    : portName(port), bandRate(bandRate), serial_port(0), empuje(0), connection_enabled(false)
     {
         #ifdef __linux__
             int code = this->setupLinuxReader();
             if(code==0){
                 std::cout << "Correct Config" << std::endl;
+                connection_enabled = true;
             }else {
                 std::cout << "Error Config" << std::endl;
             }
@@ -47,6 +50,7 @@ public:
     }
 
     int setupLinuxReader();
+    bool getConnectionStatus();
     [[nodiscard]] float readFromSerial() const;
     void closePort() const;
 };

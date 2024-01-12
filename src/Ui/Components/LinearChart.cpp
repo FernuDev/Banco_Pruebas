@@ -31,7 +31,6 @@ void LinearChart::setMin() {
                                         return l.second < r.second;
     });
 
-    // std::cout<<"Min: "<<std::to_string(Min->second)<<std::endl;
     this->min = Min->second;
 }
 
@@ -45,7 +44,6 @@ void LinearChart::setMax() {
                                 return l.second < r.second;
     });
 
-    // std::cout<<"Max: "<<std::to_string(Max->second)<<std::endl;
     this->max = Max->second;
 }
 
@@ -76,6 +74,7 @@ void LinearChart::exportToCSV(int Time) {
 
     QString Path = QFileDialog::getExistingDirectory(this, "Guardar prueba", QDir::homePath());
     // filePath contiene la ruta seleccionada por el usuario
+
     if (!Path.isEmpty()) {
         // Realiza acciones con la ruta del archivo seleccionado
         //this->setData(Time);

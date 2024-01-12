@@ -5,6 +5,10 @@
 
 const size_t BUFFER_SIZE = 256;
 
+bool SerialReader::getConnectionStatus() {
+    return this->connection_enabled;
+}
+
 float SerialReader::readFromSerial() const {
 
     char buffer[BUFFER_SIZE];
@@ -15,6 +19,8 @@ float SerialReader::readFromSerial() const {
     if(num_bytes > 0){
 
         float value = 0.0;
+
+        // Working with the value conversion
         try{
             value = std::stof(buffer);
         }catch (const std::invalid_argument &e){
@@ -22,14 +28,20 @@ float SerialReader::readFromSerial() const {
             value = 0.0;
         }
         std::cout<<"Empuje: "<<value<<std::endl;
+
+        memset(buffer, 0, sizeof (buffer));
+
         return value;
 
     } else if (num_bytes < 0) {
         std::cerr << "Error " << errno << " from read: " << strerror(errno) << std::endl;
+
+        memset(buffer, 0, sizeof (buffer));
+
+        return 0.0;
     }
 
     return 0.0;
-
 };
 
 int SerialReader::setupLinuxReader() {
@@ -38,15 +50,15 @@ int SerialReader::setupLinuxReader() {
     size_t port_size = strlen(this->portName);
 
     if(port_size > 3) {
-        std::cout << "Port selected: " << portName << std::endl;
+        std::cout << "Port selected: " << this->portName << std::endl;
         std::cout << "Connecting..." << std::endl;
 
-        serial_port = open(this->portName, O_RDWR);
+        this->serial_port = open(this->portName, O_RDWR);
 
         // Checking if the port opens correctly
 
-        if (serial_port < 0) {
-            std::cout << "\nError" << errno << "from open " << portName << ", returned " << strerror(errno)
+        if (this->serial_port < 0) {
+            std::cout << "\nError " << errno << "from open " << this->portName << ", returned " << strerror(errno)
                       << std::endl;
             return 1;
         }
@@ -55,7 +67,7 @@ int SerialReader::setupLinuxReader() {
         struct termios tty{};
 
         // Read in existing settings and handle any error
-        if (tcgetattr(serial_port, &tty) != 0) {
+        if (tcgetattr(this->serial_port, &tty) != 0) {
             std::cout << "Error in " << errno << " from tcgetattr: " << strerror(errno) << std::endl;
             return 1;
         }
@@ -80,7 +92,7 @@ int SerialReader::setupLinuxReader() {
         tty.c_oflag &= ~OPOST;
         tty.c_oflag &= ~ONLCR;
 
-        tty.c_cc[VTIME] = static_cast<cc_t>(0.1);
+        tty.c_cc[VTIME] = static_cast<cc_t>(100);
         tty.c_cc[VMIN] = 0;
 
         // Set the I/O band rate
