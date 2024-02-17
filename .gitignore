@@ -1,6 +1,7 @@
 /build
 /venv
 /cmake-build-debug
+/cmake-build-release
 # Engine and csv results
 
 *.eng
