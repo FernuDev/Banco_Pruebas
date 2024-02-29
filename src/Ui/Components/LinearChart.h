@@ -65,7 +65,7 @@ public:
 
         // Establishment limits for axis
         this->axisX->setRange(-10, 10);
-        this->axisX->setTitleText("Tiempo [ds]");
+        this->axisX->setTitleText("Tiempo [s]");
         this->axisY->setRange(-5, 5);
         this->axisY->setTitleText("Empuje [N]");
 
