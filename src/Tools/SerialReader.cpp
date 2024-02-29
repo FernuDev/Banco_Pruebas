@@ -111,6 +111,12 @@ int SerialReader::setupLinuxReader() {
                 break;
         }
 
+        // Apply the configuration changes
+        if (tcsetattr(this->serial_port, TCSANOW, &tty) != 0) {
+            std::cout << "Error " << errno << " from tcsetattr: " << strerror(errno) << std::endl;
+            return 1;
+        }
+
     }
     return 0;
 }

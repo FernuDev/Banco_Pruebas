@@ -78,60 +78,8 @@ void MainWindow::setStyle(){
     timeTitle->setGeometry(950, 20, 100, 30);
     timeTitle->setAlignment(Qt::AlignCenter);
 
-    // Setup Motor and Serial Port
-
-    auto *connectPortBtn = new Button(contentWidget, "Connect");
-    connectPortBtn->setGeometry(1050, 650, 400, 40);
-
-    auto *portTitle = new QLabel(contentWidget);
-    portTitle->setGeometry(1050, 150, 150, 40);
-    portTitle->setText("## Puerto serial");
-    portTitle->setTextFormat(Qt::MarkdownText);
-    portTitle->setAlignment(Qt::AlignLeft);
-
-    auto *portLine = new QLineEdit(contentWidget);
-    portLine->setGeometry(1250, 150, 200, 40);
-    portLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
-
-    auto *motorMassTitle = new QLabel(contentWidget);
-    motorMassTitle->setGeometry(1050, 250, 200, 40);
-    motorMassTitle->setText("## Masa de propelente");
-    motorMassTitle->setTextFormat(Qt::MarkdownText);
-    motorMassTitle->setAlignment(Qt::AlignLeft);
-
-    auto *motorMassLine = new QLineEdit(contentWidget);
-    motorMassLine->setGeometry(1250, 250, 200, 40);
-    motorMassLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
-
-    auto *motorNameTitle = new QLabel(contentWidget);
-    motorNameTitle->setGeometry(1050, 350, 200, 40);
-    motorNameTitle->setText("## Nombre Motor");
-    motorNameTitle->setTextFormat(Qt::MarkdownText);
-    motorNameTitle->setAlignment(Qt::AlignLeft);
-
-    auto *motorNameLine = new QLineEdit(contentWidget);
-    motorNameLine->setGeometry(1250, 350, 200, 40);
-    motorNameLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
-
-    auto *motorDiameterTitle = new QLabel(contentWidget);
-    motorDiameterTitle->setGeometry(1050, 450, 200, 40);
-    motorDiameterTitle->setText("## Diametro Motor");
-    motorDiameterTitle->setTextFormat(Qt::MarkdownText);
-    motorDiameterTitle->setAlignment(Qt::AlignLeft);
-
-    auto *motorDiameterLine = new QLineEdit(contentWidget);
-    motorDiameterLine->setGeometry(1250, 450, 200, 40);
-    motorDiameterLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
-
-    auto *motorLongTitle = new QLabel(contentWidget);
-    motorLongTitle->setGeometry(1050, 550, 200, 40);
-    motorLongTitle->setText("## Longitud Motor");
-    motorLongTitle->setTextFormat(Qt::MarkdownText);
-    motorLongTitle->setAlignment(Qt::AlignLeft);
-
-    auto *motorLongLine = new QLineEdit(contentWidget);
-    motorLongLine->setGeometry(1250, 550, 200, 40);
-    motorLongLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+    // Config motor and port
+    this->setMotorPort(*contentWidget);
 
     // Connection to the actions in the button
 
@@ -156,6 +104,63 @@ void MainWindow::setStyle(){
     this->updateTime(*contentWidget);
     this->setTime(*contentWidget, *timeTitle);
     this->updateChart(*contentWidget, *linearChart);
+}
+
+void MainWindow::setMotorPort(QWidget &contentWidget) {
+    // Setup Motor and Serial Port
+
+    auto *connectPortBtn = new Button(&contentWidget, "Connect");
+    connectPortBtn->setGeometry(1050, 650, 400, 40);
+
+    auto *portTitle = new QLabel(&contentWidget);
+    portTitle->setGeometry(1050, 150, 150, 40);
+    portTitle->setText("## Puerto serial");
+    portTitle->setTextFormat(Qt::MarkdownText);
+    portTitle->setAlignment(Qt::AlignLeft);
+
+    auto *portLine = new QLineEdit(&contentWidget);
+    portLine->setGeometry(1250, 150, 200, 40);
+    portLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
+    auto *motorMassTitle = new QLabel(&contentWidget);
+    motorMassTitle->setGeometry(1050, 250, 200, 40);
+    motorMassTitle->setText("## Masa de propelente");
+    motorMassTitle->setTextFormat(Qt::MarkdownText);
+    motorMassTitle->setAlignment(Qt::AlignLeft);
+
+    auto *motorMassLine = new QLineEdit(&contentWidget);
+    motorMassLine->setGeometry(1250, 250, 200, 40);
+    motorMassLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
+    auto *motorNameTitle = new QLabel(&contentWidget);
+    motorNameTitle->setGeometry(1050, 350, 200, 40);
+    motorNameTitle->setText("## Nombre Motor");
+    motorNameTitle->setTextFormat(Qt::MarkdownText);
+    motorNameTitle->setAlignment(Qt::AlignLeft);
+
+    auto *motorNameLine = new QLineEdit(&contentWidget);
+    motorNameLine->setGeometry(1250, 350, 200, 40);
+    motorNameLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
+    auto *motorDiameterTitle = new QLabel(&contentWidget);
+    motorDiameterTitle->setGeometry(1050, 450, 200, 40);
+    motorDiameterTitle->setText("## Diametro Motor");
+    motorDiameterTitle->setTextFormat(Qt::MarkdownText);
+    motorDiameterTitle->setAlignment(Qt::AlignLeft);
+
+    auto *motorDiameterLine = new QLineEdit(&contentWidget);
+    motorDiameterLine->setGeometry(1250, 450, 200, 40);
+    motorDiameterLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
+    auto *motorLongTitle = new QLabel(&contentWidget);
+    motorLongTitle->setGeometry(1050, 550, 200, 40);
+    motorLongTitle->setText("## Longitud Motor");
+    motorLongTitle->setTextFormat(Qt::MarkdownText);
+    motorLongTitle->setAlignment(Qt::AlignLeft);
+
+    auto *motorLongLine = new QLineEdit(&contentWidget);
+    motorLongLine->setGeometry(1250, 550, 200, 40);
+    motorLongLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
 }
 
 // Functionalities

@@ -10,6 +10,7 @@
 #include <string>
 #include <utility>
 #include <chrono>
+#include <thread>
 #include <cmath>
 
 // QT Libraries
@@ -52,7 +53,7 @@ public:
         this->setStyle();
         this->checkIsInit();
 
-        char *portName = "/dev/ttyUSB0";
+        char *portName = (char *)"/dev/ttyUSB0";
         this->serialReader = new SerialReader(portName, 9600);
      }
 
@@ -67,6 +68,7 @@ public:
     void setTime(QWidget &parent, QLabel &title);
     void updateTime(QWidget &parent);
     void updateChart(QWidget &parent, LinearChart &linearChart);
+    static void setMotorPort(QWidget &parent);
     void callSerialRead(QWidget &parent);
     void checkIsInit();
     float auxEmpuje(double Time);
