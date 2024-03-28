@@ -31,6 +31,7 @@
 // Tools and own headers
 #include "../../Tools/Uuid.h"
 #include "../../Tools/SerialReader.h"
+#include "../../Tools/Motor.h"
 
 class MainWindow : public QMainWindow {
 private:
@@ -39,13 +40,16 @@ private:
     std::string title;
     int time;
     bool isInit;
+
     QTimer *timer{};
     SerialReader *serialReader{};
+    char *portName{};
+    Motor *motor{};
 public:
 
      MainWindow(int w, int h, std::string title) :
      width(w), height(h), title(std::move(title)),
-     isInit(false),time(0), empuje(0)
+     isInit(false),time(0), empuje(0), portName((char*)"/dev/ttyUSB0")
      {
         this->setMinimumSize(this->width, this->height);
         this->setMaximumSize(this->width, this->height);
@@ -53,8 +57,8 @@ public:
         this->setStyle();
         this->checkIsInit();
 
-        char *portName = (char *)"/dev/ttyUSB0";
-        this->serialReader = new SerialReader(portName, 9600);
+        this->motor = new Motor();
+        this->serialReader = new SerialReader(portName,9600);
      }
 
     ~MainWindow() override {
@@ -68,8 +72,7 @@ public:
     void setTime(QWidget &parent, QLabel &title);
     void updateTime(QWidget &parent);
     void updateChart(QWidget &parent, LinearChart &linearChart);
-    static void setMotorPort(QWidget &parent);
-    void callSerialRead(QWidget &parent);
+    void setMotorPort(QWidget &parent);
     void checkIsInit();
     float auxEmpuje(double Time);
 

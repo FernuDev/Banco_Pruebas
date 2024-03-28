@@ -5,10 +5,11 @@
 
 
 function presentation() {
-	echo "\n\t Iniciando el banco de pruebas Antares Aerospace\n\n"
+	echo "Iniciando el banco de pruebas Antares Aerospace "
+	
 	./cmake-build-release/Banco_Pruebas
 
-	echo "\n\t Finalizando programa\n\n"
+	echo "Finalizando programa"
 }
 
 presentation

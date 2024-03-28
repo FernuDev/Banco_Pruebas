@@ -97,7 +97,7 @@ void MainWindow::setStyle(){
     });
 
     connect(export2Btn, &QPushButton::pressed, this, [=] (){
-        linearChart->exportToEngine(this->time);
+        linearChart->exportToEngine(this->time, *this->motor);
         std::cout<<"Export your engine..."<<std::endl;
     });
 
@@ -109,18 +109,8 @@ void MainWindow::setStyle(){
 void MainWindow::setMotorPort(QWidget &contentWidget) {
     // Setup Motor and Serial Port
 
-    auto *connectPortBtn = new Button(&contentWidget, "Connect");
-    connectPortBtn->setGeometry(1050, 650, 400, 40);
-
-    auto *portTitle = new QLabel(&contentWidget);
-    portTitle->setGeometry(1050, 150, 150, 40);
-    portTitle->setText("## Puerto serial");
-    portTitle->setTextFormat(Qt::MarkdownText);
-    portTitle->setAlignment(Qt::AlignLeft);
-
-    auto *portLine = new QLineEdit(&contentWidget);
-    portLine->setGeometry(1250, 150, 200, 40);
-    portLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+    auto *configMotorBtn = new Button(&contentWidget, "Connect");
+    configMotorBtn->setGeometry(1050, 650, 400, 40);
 
     auto *motorMassTitle = new QLabel(&contentWidget);
     motorMassTitle->setGeometry(1050, 250, 200, 40);
@@ -161,6 +151,15 @@ void MainWindow::setMotorPort(QWidget &contentWidget) {
     auto *motorLongLine = new QLineEdit(&contentWidget);
     motorLongLine->setGeometry(1250, 550, 200, 40);
     motorLongLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+
+    connect(configMotorBtn, &QPushButton::pressed, this, [=]() {
+        this->motor = new Motor(
+                motorNameLine->text().toStdString(),
+                motorDiameterLine->text().toFloat(),
+                motorLongLine->text().toFloat(),
+                motorMassLine->text().toFloat()
+                );
+    });
 }
 
 // Functionalities

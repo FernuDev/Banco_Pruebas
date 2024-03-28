@@ -22,6 +22,7 @@
 // Tools and Own headers
 
 #include "../../Tools/Uuid.h"
+#include "../../Tools/Motor.h"
 
 
 class LinearChart : public QChartView {
@@ -90,7 +91,7 @@ public:
     };
 
     void exportToCSV(int Time);
-    void exportToEngine(int Time);
+    void exportToEngine(int Time, Motor motor);
 
     // Getters and setters
 

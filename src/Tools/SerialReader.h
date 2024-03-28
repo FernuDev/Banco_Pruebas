@@ -49,7 +49,27 @@ public:
             std::cout<<"Finish Config Serial Connection"<<std::endl;
     }
 
+    SerialReader(int bandRate)
+            : bandRate(bandRate), serial_port(0), empuje(0), connection_enabled(false)
+    {
+        #ifdef __linux__
+                int code = this->setupLinuxReader();
+                if(code==0){
+                    std::cout << "Correct Config" << std::endl;
+                    connection_enabled = true;
+                }else {
+                    std::cout << "Error Config" << std::endl;
+                }
+        #elif _WIN32
+                std::cout<<"Working on Windows system"<<std::endl;
+                #else
+                    std::cout<<"Sorry your SO is not supported"<<std::endl;
+        #endif
+                std::cout<<"Finish Config Serial Connection"<<std::endl;
+    }
+
     int setupLinuxReader();
+    void setLinuxPortName();
     bool getConnectionStatus();
     [[nodiscard]] float readFromSerial() const;
     void closePort() const;

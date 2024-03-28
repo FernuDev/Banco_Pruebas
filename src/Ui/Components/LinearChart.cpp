@@ -100,7 +100,7 @@ void LinearChart::exportToCSV(int Time) {
 
 }
 
-void LinearChart::exportToEngine(int Time) {
+void LinearChart::exportToEngine(int Time, Motor motor) {
     std::ofstream engine;
     std::string data;
 
@@ -118,7 +118,7 @@ void LinearChart::exportToEngine(int Time) {
         std::string filePath = path.toStdString() + "/" + uid->generate_uid() + "-Motor.eng";
 
         engine.open(filePath, std::fstream::out);
-        engine << "MS1-41  15  120  P  0.02  0.060  Antares\n";
+        engine << motor.getName()  << " " << motor.getDiameter() << " " << motor.getLongitude() <<" P " << motor.getMass() << " Antares" << "\n";
         engine << data;
         engine.close();
 

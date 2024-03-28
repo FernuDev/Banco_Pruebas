@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1e0acf4-5a7f-47cb-9c3c-3bbd08aa4a85" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DataScience.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataScience.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostProcess/PropulsionEngineering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PostProcess/PropulsionEngineering.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ui/Windows/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Ui/Windows/MainWindow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ui/Windows/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Ui/Windows/MainWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Banco.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../Banco.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tools/SerialReader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools/SerialReader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +58,7 @@
       <workItem from="1705645868096" duration="12000" />
       <workItem from="1709165668991" duration="456000" />
       <workItem from="1709166561909" duration="655000" />
+      <workItem from="1710074486412" duration="4000" />
     </task>
     <servers />
   </component>

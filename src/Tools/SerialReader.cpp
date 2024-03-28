@@ -58,7 +58,7 @@ int SerialReader::setupLinuxReader() {
         // Checking if the port opens correctly
 
         if (this->serial_port < 0) {
-            std::cout << "\nError " << errno << "from open " << this->portName << ", returned " << strerror(errno)
+            std::cout << "\nError " << errno << " from open " << this->portName << ", returned " << strerror(errno)
                       << std::endl;
             return 1;
         }

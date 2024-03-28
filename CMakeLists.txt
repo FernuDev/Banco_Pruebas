@@ -25,6 +25,8 @@ add_executable(Banco_Pruebas
         src/Tools/SerialReader.h
         src/Tools/SerialReader.cpp
         src/Tools/SerialReader.cpp
+        src/Tools/Motor.cpp
+        src/Tools/Motor.h
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 
