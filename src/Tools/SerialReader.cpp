@@ -5,7 +5,7 @@
 
 const size_t BUFFER_SIZE = 256;
 
-bool SerialReader::getConnectionStatus() {
+bool SerialReader::getConnectionStatus() const {
     return this->connection_enabled;
 }
 

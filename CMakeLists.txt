@@ -27,6 +27,11 @@ add_executable(Banco_Pruebas
         src/Tools/SerialReader.cpp
         src/Tools/Motor.cpp
         src/Tools/Motor.h
+        src/Ui/Windows/Login.cpp
+        src/Ui/Windows/Login.h
+        src/Ui/Windows/Login.h
+        src/Banco_Pruebas.cpp
+        src/Banco_Pruebas.h
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 

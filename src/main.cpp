@@ -1,15 +1,14 @@
 #include <iostream>
 #include <QApplication>
 
-#include "./Ui/Windows/MainWindow.h"
+#include "./Banco_Pruebas.h"
 
 int main(int argc, char **argv){
 
     auto *app = new QApplication(argc, argv);
 
-    auto *mainWindow = new MainWindow(1820, 980, "Banco Pruebas");
+    auto *Banco = new Banco_Pruebas();
 
-    mainWindow->show();
 
     return QApplication::exec();
 }

@@ -70,7 +70,7 @@ public:
 
     int setupLinuxReader();
     void setLinuxPortName();
-    bool getConnectionStatus();
+    bool getConnectionStatus() const;
     [[nodiscard]] float readFromSerial() const;
     void closePort() const;
 };

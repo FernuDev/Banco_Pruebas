@@ -91,12 +91,12 @@ void MainWindow::setStyle(){
     });
 
     // Exports buttons
-    connect(exportBtn, &QPushButton::pressed, this, [=] () {
+    connect(exportBtn, &QPushButton::clicked, this, [=] () {
         linearChart->exportToCSV(this->time);
         std::cout<<"Export your results ..."<<std::endl;
     });
 
-    connect(export2Btn, &QPushButton::pressed, this, [=] (){
+    connect(export2Btn, &QPushButton::clicked, this, [=] (){
         linearChart->exportToEngine(this->time, *this->motor);
         std::cout<<"Export your engine..."<<std::endl;
     });
