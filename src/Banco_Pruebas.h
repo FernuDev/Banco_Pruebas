@@ -24,7 +24,7 @@ public:
         this->login_screen->setGlobalLayout();
         this->login_screen->show();
 
-        this->main_window = new MainWindow(160*10, 90*10, "Banco Pruebas");
+        this->main_window = new MainWindow(1820, 980, "Banco Pruebas");
 
         this->login();
     }

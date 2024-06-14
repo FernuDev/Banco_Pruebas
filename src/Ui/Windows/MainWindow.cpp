@@ -74,7 +74,7 @@ void MainWindow::setStyle(){
 
     auto *timeTitle = new QLabel(contentWidget);
     timeTitle->setTextFormat(Qt::MarkdownText);
-    timeTitle->setText("# 0");
+    timeTitle->setText("## 0");
     timeTitle->setGeometry(950, 20, 100, 30);
     timeTitle->setAlignment(Qt::AlignCenter);
 
@@ -114,43 +114,43 @@ void MainWindow::setMotorPort(QWidget &contentWidget) {
 
     auto *motorMassTitle = new QLabel(&contentWidget);
     motorMassTitle->setGeometry(1050, 250, 200, 40);
-    motorMassTitle->setText("## Masa de propelente");
+    motorMassTitle->setText("### Masa de propelente");
     motorMassTitle->setTextFormat(Qt::MarkdownText);
     motorMassTitle->setAlignment(Qt::AlignLeft);
 
     auto *motorMassLine = new QLineEdit(&contentWidget);
     motorMassLine->setGeometry(1250, 250, 200, 40);
-    motorMassLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+    motorMassLine->setStyleSheet("font-size: 14px; border: 1px solid white; border-radius: 8px");
 
     auto *motorNameTitle = new QLabel(&contentWidget);
     motorNameTitle->setGeometry(1050, 350, 200, 40);
-    motorNameTitle->setText("## Nombre Motor");
+    motorNameTitle->setText("### Nombre Motor");
     motorNameTitle->setTextFormat(Qt::MarkdownText);
     motorNameTitle->setAlignment(Qt::AlignLeft);
 
     auto *motorNameLine = new QLineEdit(&contentWidget);
     motorNameLine->setGeometry(1250, 350, 200, 40);
-    motorNameLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+    motorNameLine->setStyleSheet("font-size: 14px; border: 1px solid white; border-radius: 8px");
 
     auto *motorDiameterTitle = new QLabel(&contentWidget);
     motorDiameterTitle->setGeometry(1050, 450, 200, 40);
-    motorDiameterTitle->setText("## Diametro Motor");
+    motorDiameterTitle->setText("### Diametro Motor");
     motorDiameterTitle->setTextFormat(Qt::MarkdownText);
     motorDiameterTitle->setAlignment(Qt::AlignLeft);
 
     auto *motorDiameterLine = new QLineEdit(&contentWidget);
     motorDiameterLine->setGeometry(1250, 450, 200, 40);
-    motorDiameterLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+    motorDiameterLine->setStyleSheet("font-size: 14px; border: 1px solid white; border-radius: 8px");
 
     auto *motorLongTitle = new QLabel(&contentWidget);
     motorLongTitle->setGeometry(1050, 550, 200, 40);
-    motorLongTitle->setText("## Longitud Motor");
+    motorLongTitle->setText("### Longitud Motor");
     motorLongTitle->setTextFormat(Qt::MarkdownText);
     motorLongTitle->setAlignment(Qt::AlignLeft);
 
     auto *motorLongLine = new QLineEdit(&contentWidget);
     motorLongLine->setGeometry(1250, 550, 200, 40);
-    motorLongLine->setStyleSheet("font-size: 16px; border: 1px solid white; border-radius: 8px");
+    motorLongLine->setStyleSheet("font-size: 14px; border: 1px solid white; border-radius: 8px");
 
     connect(configMotorBtn, &QPushButton::pressed, this, [=]() {
         this->motor = new Motor(
@@ -169,19 +169,19 @@ void MainWindow::updateTime(QWidget &parent) {
     connect(this->timer, &QTimer::timeout, &parent, [=]() {
         ++time;
     });
-    // Time set each 0.01 seg
+    // Time set each 0.1 seg
     this->timer->setInterval(100);
 }
 
 void MainWindow::setTime(QWidget &parent, QLabel &timeTitle) {
     connect(this->timer, &QTimer::timeout, &parent, [=, &timeTitle]() {
-        timeTitle.setText("# "+QString::number(this->time /10.0)); // Formatting time text
+        timeTitle.setText("## "+QString::number(this->time /10.0)); // Formatting time text
     });
 }
 
 void MainWindow::updateChart(QWidget &parent, LinearChart &linearChart) {
     connect(this->timer, &QTimer::timeout, &parent, [=, &linearChart](){
-        linearChart.appendSeries(this->time/10.0,serialReader->readFromSerial(), this->time);
+        linearChart.appendSeries(this->time/10.0, this->serialReader->readFromSerial(), this->time);
     });
 }
 
@@ -213,6 +213,4 @@ void MainWindow::closeWindow() {
     this->close();
     //this->serialReader->closePort();
 }
-
-
 

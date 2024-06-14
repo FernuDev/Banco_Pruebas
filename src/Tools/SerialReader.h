@@ -7,9 +7,10 @@
 
 #include <iostream>
 #include <string>
-#include <cstring>
-#include <cmath>
-#include <utility>
+#include <QSerialPortInfo>
+#include <QSerialPort>
+#include <QString>
+#include <QByteArray>
 
 #ifdef __linux__
 
@@ -23,56 +24,37 @@
 
 class SerialReader {
 private:
-    char *portName;
-    int bandRate;
-    int serial_port;
-    float empuje;
-
-    bool connection_enabled;
+    QSerialPort *port{};
 public:
-    SerialReader(char *port, int bandRate)
-    : portName(port), bandRate(bandRate), serial_port(0), empuje(0), connection_enabled(false)
-    {
-        #ifdef __linux__
-            int code = this->setupLinuxReader();
-            if(code==0){
-                std::cout << "Correct Config" << std::endl;
-                connection_enabled = true;
-            }else {
-                std::cout << "Error Config" << std::endl;
-            }
-        #elif _WIN32
-            std::cout<<"Working on Windows system"<<std::endl;
-        #else
-            std::cout<<"Sorry your SO is not supported"<<std::endl;
-        #endif
-            std::cout<<"Finish Config Serial Connection"<<std::endl;
-    }
+    SerialReader(){
 
-    SerialReader(int bandRate)
-            : bandRate(bandRate), serial_port(0), empuje(0), connection_enabled(false)
-    {
-        #ifdef __linux__
-                int code = this->setupLinuxReader();
-                if(code==0){
-                    std::cout << "Correct Config" << std::endl;
-                    connection_enabled = true;
-                }else {
-                    std::cout << "Error Config" << std::endl;
+        const auto serialPortInfos = QSerialPortInfo::availablePorts();
+
+        for(const QSerialPortInfo &portInfo : serialPortInfos){
+            if(portInfo.portName() == "ttyUSB0" && portInfo.manufacturer() == "Silicon Labs"){
+                std::cout << "\n"<< "Port: " << portInfo.portName().toStdString() << "\n";
+                std::cout << "Location: " << portInfo.systemLocation().toStdString() << "\n";
+                std::cout << "Serial number: " << portInfo.serialNumber().toStdString() << "\n";
+                std::cout << "Manufacturer: " << portInfo.manufacturer().toStdString() << "\n";
+                std::cout << "Description: " << portInfo.description().toStdString() << "\n";
+
+                this->port = new QSerialPort();
+                this->port->setPortName(portInfo.portName());
+                this->port->setFlowControl(QSerialPort::NoFlowControl);
+                this->port->setParity(QSerialPort::NoParity);
+                this->port->setBaudRate(QSerialPort::Baud9600);
+                this->port->setDataBits(QSerialPort::Data8);
+
+                if(this->port->open(QIODevice::ReadWrite)) {
+                    std::cout << "Puerto abierto correctamente" << "\n";
+                }else{
+                    std::cout << "Error al abrir el puerto\n";
                 }
-        #elif _WIN32
-                std::cout<<"Working on Windows system"<<std::endl;
-                #else
-                    std::cout<<"Sorry your SO is not supported"<<std::endl;
-        #endif
-                std::cout<<"Finish Config Serial Connection"<<std::endl;
+            }
+        }
     }
 
-    int setupLinuxReader();
-    void setLinuxPortName();
-    bool getConnectionStatus() const;
-    [[nodiscard]] float readFromSerial() const;
-    void closePort() const;
+    float readFromSerial();
 };
 
 

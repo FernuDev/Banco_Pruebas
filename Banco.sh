@@ -5,11 +5,23 @@
 
 
 function presentation() {
-	echo "Iniciando el banco de pruebas Antares Aerospace "
-	
-	./cmake-build-release/Banco_Pruebas
+	printf "\n\tIniciando el banco de pruebas Antares Aerospace "
+    if [ -d "./Build" ]; then
+        printf "\n\tExiste el directorio de binarios\n"
+        cd Build
+        ./Banco_Pruebas
+    else 
+        printf "\n\t No existe el directorio de binarios"
+        printf "\n\t Compilando programa ...\n"
 
-	echo "Finalizando programa"
+        mkdir Build
+        cd Build && cmake ..
+        make
+        ./Banco_Pruebas
+    fi
+    
+
+	printf "\n\tFinalizando programa\n"
 }
 
 presentation

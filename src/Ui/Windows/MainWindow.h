@@ -23,7 +23,9 @@
 #include <QTimer>
 #include <QThread>
 #include <QLineEdit>
-
+#include <QCoreApplication>
+#include <QtSerialPort/QSerialPort>
+#include <QtSerialPort/QSerialPortInfo>
 // Components
 #include "../Components/LinearChart.h"
 #include "../Components/Button.h"
@@ -43,13 +45,12 @@ private:
 
     QTimer *timer{};
     SerialReader *serialReader{};
-    char *portName{};
     Motor *motor{};
 public:
 
      MainWindow(int w, int h, std::string title) :
      width(w), height(h), title(std::move(title)),
-     isInit(false),time(0), empuje(0), portName((char*)"/dev/ttyUSB0")
+     isInit(false),time(0), empuje(0)
      {
         this->setMinimumSize(this->width, this->height);
         this->setMaximumSize(this->width, this->height);
@@ -58,7 +59,7 @@ public:
         this->checkIsInit();
 
         this->motor = new Motor();
-        this->serialReader = new SerialReader(portName,9600);
+        this->serialReader = new SerialReader();
      }
 
     ~MainWindow() override {

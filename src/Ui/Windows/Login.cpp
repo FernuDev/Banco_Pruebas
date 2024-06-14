@@ -6,7 +6,7 @@
 
 void Login::setImage() {
     this->img = new QLabel();
-    auto img_pixmap = QPixmap("/home/fernudev/Projects/Banco_Pruebas/src/Ui/Img/rocket_launch.png").scaled(600, 650);
+    auto img_pixmap = QPixmap("./Img/rocket_launch.png").scaled(600, 650);
     this->img->setPixmap(img_pixmap);
     this->img->setScaledContents(true);
     this->img->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
