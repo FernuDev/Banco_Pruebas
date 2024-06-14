@@ -9,7 +9,7 @@ HX711 bascula;
  
 // Parámetro para calibrar el peso y el sensor
 //float factor_calibracion = 22350.0;  // Banco de 100 Kg
-float factor_calibracion = 3300.0;
+float factor_calibracion = 3300.0; // Banco de 2000 Kg
  
 void setup() {
   Serial.begin(9600); 
