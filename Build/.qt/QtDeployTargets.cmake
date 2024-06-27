@@ -1,1 +1,0 @@
-set(__QT_DEPLOY_TARGET_Banco_Pruebas_FILE /home/fernudev/Projects/Banco_Pruebas/Build/Banco_Pruebas)
