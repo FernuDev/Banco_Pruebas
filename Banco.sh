@@ -3,11 +3,11 @@
 #	2024
 #
 
-
 function presentation() {
 	printf "\n\tIniciando el banco de pruebas Antares Aerospace "
     if [ -d "./Build" ]; then
         printf "\n\tExiste el directorio de binarios\n"
+        # shellcheck disable=SC2164
         cd Build
         ./Banco_Pruebas
     else 

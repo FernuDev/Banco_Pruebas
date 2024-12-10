@@ -1,14 +1,14 @@
-#include <iostream>
 #include <QApplication>
-
-#include "./Banco_Pruebas.h"
+#include <QMainWindow>
 
 int main(int argc, char **argv){
 
-    auto *app = new QApplication(argc, argv);
+    QApplication app(argc, argv);
 
-    auto *Banco = new Banco_Pruebas();
+    QMainWindow mainWindow;
 
+    mainWindow.setFixedSize(1600, 900);
+    mainWindow.show();
 
     return QApplication::exec();
 }
