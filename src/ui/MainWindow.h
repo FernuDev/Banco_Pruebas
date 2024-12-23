@@ -13,11 +13,14 @@
 // Components
 #include "views/Header.h"
 #include "views/GraphView.h"
+#include "components/CountDown.h"
 
 class MainWindow : public QMainWindow {
     private:
         QWidget* centralWidget;
         QHBoxLayout* layout;
+        QVBoxLayout* infoLayout;
+        QWidget* infoWidget;
     public:
     MainWindow();
 };

@@ -17,10 +17,21 @@ MainWindow::MainWindow() {
     // Generando el header
     auto *header = new Header();
     auto *graphView = new GraphView();
+    auto *countDown = new CountDown();
+
+    // Content and information layout
+
+    this->infoLayout = new QVBoxLayout();
+    this->infoWidget = new QWidget();
 
     this->layout = new QHBoxLayout();
 
-    this->layout->addWidget(header);
+    this->infoLayout->addWidget(header);
+    this->infoLayout->addWidget(countDown);
+
+    this->infoWidget->setLayout(infoLayout);
+
+    this->layout->addWidget(infoWidget);
     this->layout->addWidget(graphView);
 
     this->centralWidget->setLayout(this->layout);

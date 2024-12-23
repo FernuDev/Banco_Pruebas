@@ -6,8 +6,12 @@
 #define BUTTON_H
 
 #include <QPushButton>
+#include <QGraphicsDropShadowEffect>
+#include <string>
 
 class Button final : public QPushButton {
+private:
+    QGraphicsDropShadowEffect* shadow;
 public:
     explicit Button(QWidget* parent = nullptr);
 };

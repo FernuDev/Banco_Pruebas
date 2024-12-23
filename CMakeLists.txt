@@ -31,6 +31,10 @@ add_executable(Banco_Pruebas
         src/ui/components/CountDown.h
         src/ui/components/Button.cpp
         src/ui/components/Button.h
+        src/ui/views/StatusView.cpp
+        src/ui/views/StatusView.h
+        src/ui/components/StatusLed.cpp
+        src/ui/components/StatusLed.h
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 

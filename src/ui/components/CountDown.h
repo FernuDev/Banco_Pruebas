@@ -5,10 +5,34 @@
 #ifndef COUNTDOWN_H
 #define COUNTDOWN_H
 
+#include <QWidget>
+#include <QLabel>
+#include <QTimer>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include "Button.h"
 
+class CountDown : public QWidget{
+    private:
+    QWidget* time;
+    QLabel* minute;
+    QLabel* separate;
+    QLabel* seconds;
+    QHBoxLayout* timeLayout;
 
-class CountDown {
+    QWidget* timer;
+    QLabel* title;
+    QVBoxLayout* timerLayout;
 
+    QWidget* btnWidget;
+    Button* startBtn;
+    Button* stopBtn;
+    QHBoxLayout* btnLayout;
+
+    QHBoxLayout* countDownLayout;
+
+    public:
+    explicit CountDown(QWidget *parent = nullptr);
 };
 
 
