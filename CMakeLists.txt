@@ -13,10 +13,24 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 COMPONENTS Core Gui Widgets Charts SerialPort REQUIRED)
 
-# file(COPY ${CMAKE_SOURCE_DIR}/src/Ui/Img DESTINATION ${CMAKE_BINARY_DIR} )
+file(COPY ${CMAKE_SOURCE_DIR}/src/assets DESTINATION ${CMAKE_BINARY_DIR} )
 
 add_executable(Banco_Pruebas
         src/main.cpp
+        src/ui/MainWindow.cpp
+        src/ui/MainWindow.h
+        src/ui/components/LinearChart.cpp
+        src/ui/components/LinearChart.h
+        src/core/SerialReader.cpp
+        src/core/SerialReader.h
+        src/ui/views/Header.cpp
+        src/ui/views/Header.h
+        src/ui/views/GraphView.cpp
+        src/ui/views/GraphView.h
+        src/ui/components/CountDown.cpp
+        src/ui/components/CountDown.h
+        src/ui/components/Button.cpp
+        src/ui/components/Button.h
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 

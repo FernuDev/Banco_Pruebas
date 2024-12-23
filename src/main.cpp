@@ -1,14 +1,11 @@
 #include <QApplication>
-#include <QMainWindow>
+#include "ui/MainWindow.h"
 
 int main(int argc, char **argv){
 
     QApplication app(argc, argv);
 
-    QMainWindow mainWindow;
-
-    mainWindow.setFixedSize(1600, 900);
-    mainWindow.show();
+    MainWindow mainWindow;
 
     return QApplication::exec();
 }
