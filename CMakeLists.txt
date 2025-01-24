@@ -35,6 +35,8 @@ add_executable(Banco_Pruebas
         src/ui/views/StatusView.h
         src/ui/components/StatusLed.cpp
         src/ui/components/StatusLed.h
+        src/ui/views/StatusConnection.cpp
+        src/ui/views/StatusConnection.h
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 

@@ -8,7 +8,7 @@ StatusLed::StatusLed(QWidget *parent) {
 
     if (parent) {setParent(parent);}
 
-    setStyleSheet("background-color: #1D1D1D; font-size: 20px; border-radius: 5px;");
+    setStyleSheet("background-color: #1D1D1D; font-size: 20px; border-radius: 5px; text-align:center;");
 
     this->shadow = new QGraphicsDropShadowEffect(this);
     shadow->setBlurRadius(25);
@@ -16,6 +16,9 @@ StatusLed::StatusLed(QWidget *parent) {
     shadow->setColor(QColor(63,139,27,100));
 
     setGraphicsEffect(shadow);
+
+    setAlignment(Qt::AlignCenter);
+
 }
 
 void StatusLed::setActive() {

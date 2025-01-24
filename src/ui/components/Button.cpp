@@ -13,4 +13,6 @@ Button::Button(QWidget* parent) {
     shadow->setColor(QColor(63,139,27,100));
 
     setGraphicsEffect(shadow);
+
+    this->setCursor(QCursor(Qt::PointingHandCursor));
 }

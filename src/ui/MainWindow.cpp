@@ -10,6 +10,9 @@ MainWindow::MainWindow() {
     this->setFixedSize(1821,900);
     this->setWindowTitle("Banco de Pruebas V3");
 
+    // Iniciamos la apertura del puerto serial
+    this->serialReader = new SerialReader();
+
     // General layout
     this->centralWidget = new QWidget();
     this->setCentralWidget(this->centralWidget);
@@ -18,6 +21,7 @@ MainWindow::MainWindow() {
     auto *header = new Header();
     auto *graphView = new GraphView();
     auto *countDown = new CountDown();
+    auto *statusView = new StatusView();
 
     // Content and information layout
 
@@ -28,6 +32,7 @@ MainWindow::MainWindow() {
 
     this->infoLayout->addWidget(header);
     this->infoLayout->addWidget(countDown);
+    this->infoLayout->addWidget(statusView);
 
     this->infoWidget->setLayout(infoLayout);
 

@@ -14,6 +14,10 @@
 #include "views/Header.h"
 #include "views/GraphView.h"
 #include "components/CountDown.h"
+#include "views/StatusView.h"
+
+// Core Components
+#include "../core/SerialReader.h"
 
 class MainWindow : public QMainWindow {
     private:
@@ -21,6 +25,8 @@ class MainWindow : public QMainWindow {
         QHBoxLayout* layout;
         QVBoxLayout* infoLayout;
         QWidget* infoWidget;
+
+        SerialReader* serialReader{};
     public:
     MainWindow();
 };
