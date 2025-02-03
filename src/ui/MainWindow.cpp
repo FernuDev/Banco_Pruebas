@@ -4,6 +4,8 @@
 
 #include "MainWindow.h"
 
+#include "views/StatusConnection.h"
+
 MainWindow::MainWindow() {
 
     // Configuramos el tamaño inicial de la ventana y el titulo de la misma
@@ -22,6 +24,7 @@ MainWindow::MainWindow() {
     auto *graphView = new GraphView();
     auto *countDown = new CountDown();
     auto *statusView = new StatusView();
+    auto *statusConnection = new StatusConnection();
 
     // Content and information layout
 
@@ -33,6 +36,7 @@ MainWindow::MainWindow() {
     this->infoLayout->addWidget(header);
     this->infoLayout->addWidget(countDown);
     this->infoLayout->addWidget(statusView);
+    this->infoLayout->addWidget(statusConnection);
 
     this->infoWidget->setLayout(infoLayout);
 

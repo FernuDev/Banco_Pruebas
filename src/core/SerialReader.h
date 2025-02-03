@@ -11,11 +11,6 @@
 #include <QSerialPort>
 #include <QString>
 
-#ifdef __linux__
-
-
-#endif
-
 class SerialReader {
 private:
     QSerialPort *port{};
@@ -53,9 +48,9 @@ public:
                 this->description = serialPortInfo.description();
 
                 if (this->port->open(QIODevice::ReadWrite)) {
-                    std::cout << "Puerto serial abierto correctamente" << std::endl;
+                    std::cout << "\nPuerto serial abierto correctamente" << std::endl;
                 } else {
-                    std::cout << "Error al abrir el puerto" << std::endl;
+                    std::cout << "\nError al abrir el puerto" << std::endl;
                 }
 
                 return;
@@ -66,12 +61,12 @@ public:
 
     };
 
-    float readFromSerial() const;
-    QString getPortName() const;
-    QString getSerialNumber() const;
-    QString getLocation() const;
-    QString getManufacturer() const;
-    QString getDescription() const;
+    [[nodiscard]] float readFromSerial() const;
+    [[nodiscard]] QString getPortName() const;
+    [[nodiscard]] QString getSerialNumber() const;
+    [[nodiscard]] QString getLocation() const;
+    [[nodiscard]] QString getManufacturer() const;
+    [[nodiscard]] QString getDescription() const;
 };
 
 
