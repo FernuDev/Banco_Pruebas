@@ -13,14 +13,14 @@
 
 class StatusView : public QWidget{
 private:
-    StatusLed* standBy;
-    StatusLed* countDown;
-    StatusLed* prueba;
-    StatusLed* finPrueba;
+    StatusLed* standBy{};
+    StatusLed* countDown{};
+    StatusLed* prueba{};
+    StatusLed* finPrueba{};
 
-    QHBoxLayout* layout;
+    QHBoxLayout* layout{};
 public:
-    StatusView(QWidget *parent = nullptr);
+    explicit StatusView(QWidget *parent = nullptr);
 };
 
 

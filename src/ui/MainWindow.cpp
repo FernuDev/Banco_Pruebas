@@ -45,5 +45,6 @@ MainWindow::MainWindow() {
 
     this->centralWidget->setLayout(this->layout);
 
+    setStyleSheet("background-color: #2D2D2D;");
     this->show();
 }
