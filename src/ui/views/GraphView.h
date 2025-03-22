@@ -1,26 +1,27 @@
-//
-// Created by fernudev on 12/23/24.
-//
-
 #ifndef GRAPHVIEW_H
 #define GRAPHVIEW_H
 
-#include <QVBoxLayout>
-#include <QLabel>
-#include <QPixmap>
 #include <QWidget>
+#include <QtCharts/QChartView>
+#include <QtCharts/QLineSeries>
+#include <QtCharts/QValueAxis>
+#include <QVBoxLayout>
 
-class GraphView : public QWidget{
-private:
-    QLabel* presion;
-    QLabel* empuje;
-    QPixmap* presionPix;
-    QPixmap* empujePix;
-    QVBoxLayout* layout;
+class GraphView : public QWidget
+{
+    Q_OBJECT
+
 public:
-    GraphView(QWidget *parent=nullptr);
+    explicit GraphView(QWidget *parent = nullptr);
+    void addTestData() const;
+    void setLineColor(const QColor& color) const;
+    void setChartTitle(const QString& title) const;
+
+private:
+    QChart *chart;
+    QLineSeries *seriesRed;  // Solo la serie roja
+    QValueAxis *axisX;
+    QValueAxis *axisY;
 };
 
-
-
-#endif //GRAPHVIEW_H
+#endif // GRAPHVIEW_H

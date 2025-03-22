@@ -9,7 +9,7 @@ StatusView::StatusView(QWidget *parent) {
 
     setStyleSheet("background-color: #1D1D1D;");
 
-    // Inicializando los leds de estatus
+    // Inicializando los leds de estaztus
     this->standBy = new StatusLed();
     this->standBy->setText("Standby");
 

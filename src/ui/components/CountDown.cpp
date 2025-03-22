@@ -7,7 +7,7 @@
 CountDown::CountDown(QWidget* parent) {
     if (parent) { setParent(parent); }
 
-    setStyleSheet("background-color: #1D1D1D;");
+    setStyleSheet("background-color: #1D1D1D; ");
     setMaximumHeight(200);
 
     this->time = new QWidget();

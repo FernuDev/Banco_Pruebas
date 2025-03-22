@@ -9,11 +9,11 @@
 StatusConnection::StatusConnection(QWidget *parent) {
     if (parent) { setParent(parent); }
 
-    setStyleSheet("background-color: #1D1D1D;");
+    setStyleSheet("background-color: #1D1D1D; border-radius: 10px;");
 
     // Generando el titulo del componente
     this->statusTitle = new QLabel("Estatus Conexión");
-    this->statusTitle->setStyleSheet("font-size: 24px; border-bottom: 2px solid white;");
+    this->statusTitle->setStyleSheet("font-size: 24px; border-bottom: 2px solid white; border-radius: 0px");
     this->statusTitle->setAlignment(Qt::AlignCenter);
     this->statusTitle->setMaximumWidth(259);
 

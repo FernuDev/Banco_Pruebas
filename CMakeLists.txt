@@ -37,6 +37,12 @@ add_executable(Banco_Pruebas
         src/ui/components/StatusLed.h
         src/ui/views/StatusConnection.cpp
         src/ui/views/StatusConnection.h
+        src/ui/views/StatusBattery.cpp
+        src/ui/views/StatusBattery.h
+        src/ui/views/SensorWidget.cpp
+        src/ui/views/SensorWidget.h
+        src/ui/components/TareWidget.cpp
+        src/ui/components/TareWidget.h
 )
 
 target_link_libraries(Banco_Pruebas PUBLIC 
